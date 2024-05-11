@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --background-green: linear-gradient(
@@ -16,4 +17,31 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.green_background_linear {
+  background: var(--background-green);
+}
+.green_color_linear {
+  background-image: linear-gradient(164.04deg, #6bc6b4 7.65%, #127358 123.79%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+.button {
+  padding: 0.5rem 0.8rem;
+}
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagecss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

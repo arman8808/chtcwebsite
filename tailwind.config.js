@@ -4,8 +4,25 @@ module.exports = {
   theme: {
     colors: {
       "light-green": "#77CFA1",
-      "primary-green": "#6BC6B4",
+      "primary-green": "#0A9A73",
+      "secondry-green": "#6BC6B4",
       white: "#fff",
+      gray: "#A7A7A7",
+      "navy-blue": "#2B2C76",
+      "black-shade": "#3D3D3D",
+    },
+    fontSize: {
+      mainHeading: "3rem",
+      seconderyHeading: "2rem",
+      normalHeading: "1.5rem",
+      para: "1rem",
+    },
+    fontWeight: {
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "800",
+      extrabold: "900",
     },
     screens: {
       mobile: { min: "320px", max: "639px" },

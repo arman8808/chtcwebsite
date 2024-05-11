@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../../assests/images/logo-01-01 1.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import "./MainNav.css";
 function MainNav() {
   return (
-    <div className="w-full flex items-center justify-center ">
-      <div className="py-1 px-2  w-9/12  flex justify-between items-center  bg-[white] rounded-md">
+    <div className="w-full flex items-center justify-center bg-primary-green mainnav">
+      <div className="py-2 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md">
         <img
           src={logo}
           alt="logo"
