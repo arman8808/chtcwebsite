@@ -353,6 +353,128 @@ function AboutFacility() {
           </ul>
         </div>
       </div>
+      <div className="w-10/12 py-4  grid grid-cols-1 gap-4">
+        <div className="flex flex-col items-start justify-start gap-2">
+          <h2 className="text-seconderyHeading font-semibold text-navy-blue">
+            Social responsibility
+          </h2>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            Janta OPD (A.A.S.T.H.A OPD )
+          </h6>
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>- Special Clinics.</li>
+            <li>- Special Health Check-Up Package.</li>
+          </ul>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            O.T. Complex
+          </h6>{" "}
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            Operation theatres 3 in No. (All Major).
+          </h6>
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>- Dressing Room.</li>
+            <li>- Labor Room.</li>
+            <li>- Minor O.T.</li>
+            <li>
+              - OT Complex is ultra modern with state of art facilities for all
+              types of super-specialty operations vis-à-vis AO Instrumentation,
+              9” C-Arm (Imaging), Cautery, Boyle’s Apparatus, Arthroscope,
+              Laparoscopes, Endoscopes, Central Monitoring System,
+              Multiparameter monitoring system, defibrillator, suction
+              apparatus, we also have a central oxygen supply system, etc.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-10/12 py-4  grid grid-cols-1 gap-4">
+        <div className="flex flex-col items-start justify-start gap-2">
+          <h2 className="text-seconderyHeading font-semibold text-navy-blue">
+            DIAGNOSTIC FACILITIES
+          </h2>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            Complete Pathology
+          </h6>
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>- Biochemistry.</li>
+            <li>- Histopathology / Bacteriology / Serology.</li>
+            <li>- X – Ray.</li>
+            <li>- E. C. G.</li>
+            <li>- E. E. G. & N. C. V.</li>
+            <li>- Ultrasound.</li>
+            <li>- 2-D ECHO.</li>
+            <li>- T. M. T.</li>
+            <li>- Holter / Doppler tests.</li>
+          </ul>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            Minimal Invasive Surgery
+          </h6>{" "}
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>
+              - Three operation theaters equipped with equipment's of
+              international standard & supported by highly skilled medical and
+              paramedical staff..
+            </li>
+            <li>
+              - For endoscopic removal of gall bladder, uterus appendices and
+              hernia repair etc..
+            </li>
+            <li>- Minor O.T.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-10/12 py-4  grid grid-cols-1 gap-4">
+        <div className="flex flex-col items-start justify-start gap-2">
+          <h2 className="text-seconderyHeading font-semibold text-navy-blue">
+            Gynae and Obstectrics
+          </h2>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            {" "}
+            Anti natal & post natal clinic
+          </h6>
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>
+              - Well equipped & neonatal facilities with well trained staff.
+            </li>
+            <li>
+              - Well women clinic for counseling of family planning, menopause,
+              awareness of genital cancer etc.
+            </li>
+            <li>- Menopause clinic.</li>
+            <li>
+              - Cancer detection & awareness clinic in female (for breast and
+              cervical cancer)..
+            </li>
+          </ul>
+          <h6 className="text-normalHeading semibold text-secondry-green">
+            OTHER SPECIAL FACILITIES
+          </h6>
+          <ul className="text-black-shade font-semibold text-[1.2rem]">
+            <li>- Panel of Doctors are the best & cover all fields.</li>
+            <li>- Medical Officers Round the clock for each ward.</li>
+            <li>- Trained Nursing & Paramedical Staff round the clock.</li>
+            <li>- 24 Hours 7 days a week Help-line services.</li>
+            <li>- Trauma Centre, Total Cardiac facilities.</li>
+            <li>- Infertility Clinic, Neo-natal care unit.</li>
+            <li>- Home visit for Physiotherapy.</li>
+            <li>- On-line medical help line.</li>
+            <li>
+              - Free health detection camps (including specialty subject).
+            </li>
+            <li>- WHO approved Hepatitis – B vaccination facilities.</li>
+            <li>- Health Checkup plans. Regular Medical Education camps.</li>
+            <li>- Medical advisory board.</li>
+            <li>
+              - For endoscopic removal of gall bladder, uterus appendices and
+              hernia repair etc..
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
