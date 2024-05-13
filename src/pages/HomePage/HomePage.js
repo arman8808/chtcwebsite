@@ -3,6 +3,10 @@ import herosectionImage from "../../assests/images/Group.png";
 import herosectionImage1 from "../../assests/images/Element 2.png";
 import About from "../../assests/images/Placeholder1.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import MarqueeComponent from "../../utils/Marquee";
+import DoctorCard from "../../components/DoctorCard/DoctorCard";
+import ReviewCard from "../../components/ReviewCard/ReviewCard";
+import OurGoalsBanner from "../../utils/OurGoalsBanner";
 function HomePage() {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-[3rem]">
@@ -66,7 +70,7 @@ function HomePage() {
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
       </div>
-      <div className="w-11/12  grid grid-cols-2 gap-4 ">
+      <div className="w-11/12 py-4   grid grid-cols-2 gap-4 ">
         <div className="flex flex-col items-start justify-start gap-4">
           <h3 className="text-normalHeading green_color_linear font-semibold">
             ABOUT US
@@ -100,6 +104,48 @@ function HomePage() {
             className="w-[90%] h-[90%] object-contain"
           />
         </div>
+      </div>
+      <div className=" w-11/12 py-4">
+        <OurGoalsBanner />
+      </div>
+      <div className="w-11/12 py-4   flex flex-col items-center justify-center gap-2">
+        <span>
+          <h6 className="text-seconderyHeading font-semibold text-navy-blue">
+            Some Reviews
+          </h6>
+          <p className="para text-normalHeading font-semibold text-secondry-green text-center">
+            OF OUR CLIENTS
+          </p>
+        </span>
+        <div className="w-full flex items-center justify-start gap-4 overflow-x-auto scroll_bar">
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+        </div>
+      </div>
+      <div className="w-11/12 py-4   flex flex-col items-center justify-center gap-2">
+        <h6 className="text-seconderyHeading font-semibold text-secondry-green">
+          Meet our Doctors
+        </h6>
+        <p className="para text-normalHeading font-semibold text-black-shade text-center">
+          CHTC grant patients access to top-tier doctors in India, ensuring the
+          highest standards of healthcare.
+        </p>
+        <div className="w-11/12 grid grid-cols-3 gap-2">
+          <DoctorCard />
+          <DoctorCard />
+          <DoctorCard />
+        </div>
+      </div>
+      <div className="w-11/12  flex flex-col items-center justify-center gap-4 mb-4">
+        <h6 className="text-seconderyHeading font-semibold text-black-shade">
+          Our Partners
+        </h6>
+        <MarqueeComponent />
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ module.exports = {
       bold: "800",
       extrabold: "900",
     },
+
     screens: {
       mobile: { min: "320px", max: "639px" },
       tablet: { min: "640px", max: "767px" },

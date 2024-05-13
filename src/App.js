@@ -14,6 +14,7 @@ import LogosGalary from "./pages/OurGalary/LogosGalary";
 import OurDoctors from "./pages/OurDoctors/OurDoctors";
 import Deparments from "./pages/Deparments/Deparments";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/deparments" element={<Deparments />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
