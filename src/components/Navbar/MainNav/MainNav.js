@@ -3,7 +3,7 @@ import logo from "../../../assests/images/logo-01-01 1.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./MainNav.css";
 import { NavLink } from "react-router-dom";
-import { Backdrop, Box, Fade, Modal, Typography } from "@mui/material";
+import { Backdrop, Box, Modal } from "@mui/material";
 import { Slide } from "@mui/material";
 function MainNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,12 +32,13 @@ function MainNav() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: 600,
     bgcolor: "background.paper",
     border: "2px solid transparent",
     boxShadow: 24,
     p: 4,
     outline: "transparent",
+    borderRadius: "8px",
   };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -67,14 +68,12 @@ function MainNav() {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="#"
-              className="text-[18px] font-medium"
-              style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
+            <p
+              className="text-[#3D3D3D] font-semibold cursor-pointer"
               onClick={handleOpen}
             >
               About
-            </NavLink>
+            </p>
           </li>
           <li>
             <NavLink
@@ -132,12 +131,48 @@ function MainNav() {
       >
         <Slide direction="down" in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
+            <div className="grid grid-cols-2 gap-4">
+              <NavLink
+                to="/aboutus"
+                className="text-[18px] font-medium"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={handleClose}
+              >
+                AboutUs
+              </NavLink>{" "}
+              <NavLink
+                to="/aboutfacility"
+                className="text-[18px] font-medium"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={handleClose}
+              >
+                About Facility
+              </NavLink>{" "}
+              <NavLink
+                to="/aboutusourmanagement"
+                className="text-[18px] font-medium"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={handleClose}
+              >
+                Aboutus Our Management
+              </NavLink>{" "}
+              <NavLink
+                to="/aboutorthopaedic"
+                className="text-[18px] font-medium"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+                onClick={handleClose}
+              >
+                About Orthopaedic
+              </NavLink>
+            </div>
           </Box>
         </Slide>
       </Modal>
