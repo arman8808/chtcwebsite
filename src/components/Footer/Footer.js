@@ -6,7 +6,7 @@ import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 function Footer() {
   return (
     <div className="w-full relative flex items-center justify-start flex-col mt-[5rem]">
-      <img src={img} alt="" className="h-[20rem] absolute top-[-7rem] z-1" />
+      <img src={img} alt="" className="h-[20rem] absolute top-[-7rem] z-50" />
       <div className="w-full flex items-center justify-center  relative">
         <img
           src={footerBackground}
