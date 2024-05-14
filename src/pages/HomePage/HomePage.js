@@ -3,9 +3,19 @@ import herosectionImage from "../../assests/images/Group.png";
 import herosectionImage1 from "../../assests/images/Element 2.png";
 import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
+import doctor from "../../assests/images/Image (1).png";
+import doctor1 from "../../assests/images/Image (2).png";
+// import image from "../../assests/images/Group 120.png";
+import contacusimage from "../../assests/images/Rectangle 111.png";
 import bg from "../../assests/images/Group 103.png";
 import Emergency from "../../assests/images/icons/Mask group.png";
-import bell from "../../assests/images/icons/Vector.png";
+import pharmacy from "../../assests/images/icons/Mask group-1.png";
+import jointReplacement from "../../assests/images/icons/Mask group-2.png";
+import Obstetrics from "../../assests/images/icons/Mask group-3.png";
+import Cardiology from "../../assests/images/icons/Mask group-4.png";
+import Urology from "../../assests/images/icons/Mask group-5.png";
+import Dental from "../../assests/images/icons/Mask group-6.png";
+import Critical from "../../assests/images/icons/Mask group-7.png";
 import About from "../../assests/images/Placeholder1.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import MarqueeComponent from "../../utils/Marquee";
@@ -13,7 +23,14 @@ import DoctorCard from "../../components/DoctorCard/DoctorCard";
 import ReviewCard from "../../components/ReviewCard/ReviewCard";
 import OurGoalsBanner from "../../utils/OurGoalsBanner";
 import NewsUpdateCard from "../../components/NewsUpdateCard/NewsUpdateCard";
+import { useNavigate } from "react-router-dom";
+import { HiOutlineBellAlert } from "react-icons/hi2";
+import { MdOutlineGirl } from "react-icons/md";
+import { GiBrain, GiKidneys, GiPsychicWaves } from "react-icons/gi";
+import { FaHeartPulse } from "react-icons/fa6";
+import CountUp from "react-countup";
 function HomePage() {
+  const history = useNavigate();
   return (
     <div className="w-full flex flex-col items-center justify-center gap-[3rem]">
       <div
@@ -63,7 +80,9 @@ function HomePage() {
       </div>
       <div className="w-11/12 bg-primary-green py-4 px-[5%] grid grid-cols-4 gap-4 rounded-md">
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">4,357</p>
+          <p className="text-mainHeading font-bold text-white">
+            <CountUp start={0} end={4357} duration={10.75}></CountUp>
+          </p>
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
@@ -102,7 +121,10 @@ function HomePage() {
             elevate the standard of care to the point where "Our excellence
             becomes the nation's benchmark" in medical treatment.
           </p>
-          <button className="button green_background_linear text-white rounded-md">
+          <button
+            className="button green_background_linear text-white rounded-md"
+            onClick={() => history("/aboutus")}
+          >
             Read More
           </button>
         </div>
@@ -136,99 +158,105 @@ function HomePage() {
           Departments
         </h6>
         <div className="w-11/12 absolute bottom-[1rem] flex gap-4">
-          <span className="cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            {/* <img src={bell} alt="" /> */}
+            <HiOutlineBellAlert className="text-[3rem]" />
             <p>Emergency Department</p>
           </span>{" "}
-          <span className="cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
-            <p>Emergency Department</p>
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            <MdOutlineGirl className="text-[3rem]" />
+            <p>Pediatric Departement</p>
           </span>{" "}
-          <span className="cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
-            <p>Emergency Department</p>
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            <GiKidneys className="text-[3rem]" />
+            <p>Obstetrics and Gynecology Department</p>
           </span>{" "}
-          <span className="cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
-            <p>Emergency Department</p>
+          <span className=" w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            <FaHeartPulse className="text-[3rem]" />
+            <p>Cardiology Department</p>
           </span>{" "}
-          <span className="cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
-            <p>Emergency Department</p>
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            <GiBrain className="text-[3rem]" />
+            <p>Neurology Department</p>
           </span>{" "}
-          <span className="cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
-            <img src={bell} alt="" />
-            <p>Emergency Department</p>
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+            <GiPsychicWaves className="text-[3rem]" />
+            <p>Psychiatry Department</p>
           </span>
         </div>
       </div>
       <div className="w-11/12 h-fit py-y px-4 green_gredient relative flex items-center justify-center rounded-md">
         <img src={image} alt="" />
-        <div className="w-11/12 absolute grid grid-cols-4 gap-4">
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Emergency Care 24x7</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Pharmacy & Lab Services 24x7</p>
-          </span>{" "}
-          <span className="p-4  py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Joint Replacement & Trauma Surgeries</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Obstetrics & Gynaecology Unit</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Cardiology & Pulmonology</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Urology & Nephrology</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Dental Services</p>
-          </span>{" "}
-          <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
-            <img
-              src={Emergency}
-              alt="Emergency"
-              className="h-[5rem] object-contain"
-            />
-            <p> Critical Care Unit</p>
-          </span>
+        <div className="w-11/12 absolute flex flex-col gap-4 items-center">
+          <h6 className="text-seconderyHeading font-semibold text-white">
+            Facilities We Provide
+          </h6>
+          <div className=" grid grid-cols-4 gap-4">
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Emergency}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Emergency Care 24x7</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={pharmacy}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Pharmacy & Lab Services 24x7</p>
+            </span>{" "}
+            <span className="p-4  py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={jointReplacement}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Joint Replacement & Trauma Surgeries</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Obstetrics}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Obstetrics & Gynaecology Unit</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Cardiology}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Cardiology & Pulmonology</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Urology}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Urology & Nephrology</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Dental}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Dental Services</p>
+            </span>{" "}
+            <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
+              <img
+                src={Critical}
+                alt="Emergency"
+                className="h-[5rem] object-contain"
+              />
+              <p> Critical Care Unit</p>
+            </span>
+          </div>
         </div>
       </div>
       <div className=" w-11/12 py-4">
@@ -243,7 +271,7 @@ function HomePage() {
             OF OUR CLIENTS
           </p>
         </span>
-        <div className="w-full flex items-center justify-start gap-4 overflow-x-auto scroll_bar">
+        <div className="w-full flex items-center justify-start gap-4 overflow-x-auto scroll_bar py-4">
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
@@ -263,15 +291,102 @@ function HomePage() {
         </p>
         <div className="w-11/12 grid grid-cols-3 gap-2">
           <DoctorCard />
-          <DoctorCard />
-          <DoctorCard />
+          <DoctorCard profile={doctor} />
+          <DoctorCard profile={doctor1} />
         </div>
       </div>
-      <div className="w-11/12  flex flex-col items-center justify-center gap-4 mb-4">
-        <h6 className="text-seconderyHeading font-semibold text-black-shade">
-          Our Partners
-        </h6>
-        <MarqueeComponent />
+      <div className="w-11/12 py-4  grid grid-cols-2 gap-4">
+        <div className="col-span-1 flex flex-col items-start justify-start gap-2">
+          <span>
+            <p className="text-secondry-green text-normalHeading font-medium">
+              BOOK AN
+            </p>
+            <h6 className="text-navy-blue text-seconderyHeading font-semibold">
+              Appointment
+            </h6>
+          </span>
+
+          <from className="flex justify-start items-start flex-col gap-2 w-full">
+            <div className="grid grid-cols-2 gap-4  w-full">
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Name</p>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>{" "}
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Phone Number</p>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-4 w-full">
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Reason for Visit</p>
+                <input
+                  type="text"
+                  placeholder="Reason for Visit"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>{" "}
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Department</p>
+                <input
+                  type="text"
+                  placeholder="Department"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-4 w-full">
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Preferred Date</p>
+                <input
+                  type="date"
+                  placeholder="Preferred Date"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>{" "}
+              <span className="flex flex-col items-start justify-start w-full gap-2">
+                <p>Preferred Time</p>
+                <input
+                  type="time"
+                  placeholder="Preferred Time"
+                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                />
+              </span>
+            </div>
+            <button className="button text-white rounded-md green_background_linear">
+              Submit
+            </button>
+          </from>
+        </div>
+        <div className="flex items-center justify-center">
+          <img src={contacusimage} alt="contacusimage" className="h-[30rem]" />
+        </div>
+      </div>
+
+      <div className="w-full bg-[#F6FBFF] py-4 flexcenter">
+        <div className="w-11/12   flex flex-col items-center justify-center gap-4 mb-4">
+          <div className="w-full flex items-center justify-between ">
+            <h6 className="text-seconderyHeading font-semibold text-black-shade">
+              Our Partners
+            </h6>
+            <button
+              className="green_background_linear text-white button rounded-lg"
+              onClick={() => history("/logosgalary")}
+            >
+              View All
+            </button>
+          </div>
+
+          <MarqueeComponent />
+        </div>
       </div>
     </div>
   );

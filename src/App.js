@@ -3,19 +3,24 @@ import "./App.css";
 import SubNav from "./components/Navbar/SubNav/SubNav";
 import MainNav from "./components/Navbar/MainNav/MainNav";
 import GoToTop from "./GoToTop";
-import HomePage from "./pages/HomePage/HomePage";
-import AboutUs from "./pages/AboutUs/AboutUs";
-import AboutFacility from "./pages/AboutUs/AboutFacility";
-import AboutusOurManagement from "./pages/AboutUs/AboutusOurManagement";
-import AboutOrthopaedic from "./pages/AboutUs/AboutOrthopaedic";
-import SuccessStories from "./pages/SuccessStories/SuccessStories";
-import OurGalary from "./pages/OurGalary/OurGalary";
-import LogosGalary from "./pages/OurGalary/LogosGalary";
-import OurDoctors from "./pages/OurDoctors/OurDoctors";
-import Deparments from "./pages/Deparments/Deparments";
-import ContactUs from "./pages/ContactUs/ContactUs";
-import Footer from "./components/Footer/Footer";
 
+import Footer from "./components/Footer/Footer";
+import { Suspense, lazy } from "react";
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const AboutUs = lazy(() => import("./pages/AboutUs/AboutUs"));
+const AboutFacility = lazy(() => import("./pages/AboutUs/AboutFacility"));
+const AboutusOurManagement = lazy(() =>
+  import("./pages/AboutUs/AboutusOurManagement")
+);
+const AboutOrthopaedic = lazy(() => import("./pages/AboutUs/AboutOrthopaedic"));
+const SuccessStories = lazy(() =>
+  import("./pages/SuccessStories/SuccessStories")
+);
+const OurGalary = lazy(() => import("./pages/OurGalary/OurGalary"));
+const LogosGalary = lazy(() => import("./pages/OurGalary/LogosGalary"));
+const OurDoctors = lazy(() => import("./pages/OurDoctors/OurDoctors"));
+const Deparments = lazy(() => import("./pages/Deparments/Deparments"));
+const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 function App() {
   return (
     <BrowserRouter>
@@ -23,20 +28,160 @@ function App() {
       <SubNav />
       <MainNav />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/aboutfacility" element={<AboutFacility />} />
+        <Route
+          path="/"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <HomePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/aboutus"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <AboutUs />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/aboutfacility"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <AboutFacility />
+            </Suspense>
+          }
+        />
         <Route
           path="/aboutusourmanagement"
-          element={<AboutusOurManagement />}
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <AboutusOurManagement />
+            </Suspense>
+          }
         />
-        <Route path="/aboutorthopaedic" element={<AboutOrthopaedic />} />
-        <Route path="/successstories" element={<SuccessStories />} />
-        <Route path="/ourgalary" element={<OurGalary />} />
-        <Route path="/logosgalary" element={<LogosGalary />} />
-        <Route path="/ourdoctors" element={<OurDoctors />} />
-        <Route path="/deparments" element={<Deparments />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route
+          path="/aboutorthopaedic"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <AboutOrthopaedic />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/successstories"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <SuccessStories />{" "}
+            </Suspense>
+          }
+        />
+        <Route
+          path="/ourgalary"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <OurGalary />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/logosgalary"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <LogosGalary />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/ourdoctors"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <OurDoctors />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/deparments"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <Deparments />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contactus"
+          element={
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center w-full h-[30rem]">
+                  <div class="loader"></div>
+                </div>
+              }
+            >
+              <ContactUs />
+            </Suspense>
+          }
+        />
       </Routes>
       <Footer />
     </BrowserRouter>

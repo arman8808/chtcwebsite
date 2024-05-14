@@ -59,7 +59,7 @@ function ContactUs() {
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Preferred Date</p>
               <input
-                type="text"
+                type="date"
                 placeholder="Preferred Date"
                 className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
               />
@@ -67,7 +67,7 @@ function ContactUs() {
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Preferred Time</p>
               <input
-                type="text"
+                type="time"
                 placeholder="Preferred Time"
                 className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
               />

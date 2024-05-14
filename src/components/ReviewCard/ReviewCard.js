@@ -1,8 +1,10 @@
 import React from "react";
 import verify from "../../assests/images/material-symbols_verified.png";
+import reviewImage from "../../assests/images/Group 122.png";
 function ReviewCard() {
   return (
     <div className="min-w-[25rem] flex flex-col gap-2 box_shadow p-4 rounded-md">
+      <img src={reviewImage} alt="reviewImage" />
       <div className="w-full grid grid-cols-3 gap-4">
         <span className="col-span-2">
           <p>Nemesis _ Aquib</p>

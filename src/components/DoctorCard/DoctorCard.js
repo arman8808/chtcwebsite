@@ -1,11 +1,11 @@
 import React from "react";
 import img from "../../assests/images/photo.png";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-function DoctorCard() {
+function DoctorCard({ profile }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2  bg-light-gray p-4 w-[80%] rounded">
+    <div className="flex flex-col items-center justify-center gap-2  bg-light-gray p-4 w-[80%] rounded w-full">
       <img
-        src={img}
+        src={profile ? profile : img}
         alt="doctor"
         className="h-[20rem] w-full object-contain rounded"
       />

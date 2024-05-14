@@ -51,7 +51,7 @@ function MainNav() {
           : "w-full flex items-center justify-center bg-primary-green mainnav"
       }
     >
-      <div className="py-2 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow">
         <img
           src={logo}
           alt="logo"

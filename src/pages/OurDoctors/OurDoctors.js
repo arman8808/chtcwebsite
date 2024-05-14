@@ -11,7 +11,7 @@ function OurDoctors() {
           </h2>
         </div>
       </div>
-      <div className="w-9/12 grid grid-cols-3 gap-4">
+      <div className="w-10/12 grid grid-cols-3 gap-4">
         <DoctorCard />
         <DoctorCard />
         <DoctorCard />
