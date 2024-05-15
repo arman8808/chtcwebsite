@@ -2,6 +2,7 @@ import React from "react";
 import img from "../../assests/images/Logo.png";
 import footerBackground from "../../assests/images/Vector 8.png";
 import {
+  Email,
   Facebook,
   Instagram,
   LocationOn,
@@ -19,7 +20,7 @@ function Footer() {
           alt="footerBackground"
           className="w-full h-[25rem]"
         />
-        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[6rem] absolute">
+        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[8rem] absolute">
           <div className="flex flex-col justify-start items-start gap-2">
             <h6 className="text-para font-semibold text-black-shade">
               City Hospital Trauma Center
@@ -31,7 +32,7 @@ function Footer() {
                   style={{ fontSize: "1.4rem" }}
                 />
               </p>
-              <p className="text-[14px]">
+              <p className="text-[14px] w-[80%]">
                 C 1 & C 2 , CINDER DUMP COMPLEX, KANPUR ROAD, NEAR ALAMBAGH BUS
                 STAND, ALAMBAGH, LUCKNOW, UTTAR PRADESH, 226005
               </p>
@@ -40,11 +41,11 @@ function Footer() {
               <p className="p-1 bg-primary-green rounded-full">
                 <Phone className="text-white" style={{ fontSize: "1.4rem" }} />
               </p>
-              <p className="text-[14px]">9119900861,9119900862</p>
+              <p className="text-[14px]">+91 9119900861,+91 9119900862</p>
             </span>
             <span className="flex items-start justify-start gap-2">
               <p className="p-1 bg-primary-green rounded-full">
-                <Phone className="text-white" style={{ fontSize: "1.4rem" }} />
+                <Email className="text-white" style={{ fontSize: "1.4rem" }} />
               </p>
               <p className="text-[14px]">city.lko@gmail.com</p>
             </span>

@@ -81,7 +81,12 @@ function HomePage() {
       <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md">
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={4357} duration={5}></CountUp>
+            <CountUp
+              start={0}
+              end={4357}
+              duration={5}
+              scrollSpyDelay={500}
+            ></CountUp>
           </p>
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
