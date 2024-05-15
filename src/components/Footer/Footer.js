@@ -13,14 +13,18 @@ import {
 function Footer() {
   return (
     <div className="w-full relative flex items-center justify-start flex-col mt-[5rem]">
-      <img src={img} alt="" className="h-[20rem] absolute top-[-7rem] z-50" />
+      <img
+        src={img}
+        alt=""
+        className="h-[20rem] absolute top-[-7rem] z-10 mobile:p[-4rem]"
+      />
       <div className="w-full flex items-center justify-center  relative">
         <img
           src={footerBackground}
           alt="footerBackground"
-          className="w-full h-[25rem]"
+          className="w-full h-[25rem]  mobile:h-[46rem]"
         />
-        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[8rem] absolute">
+        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[8rem] absolute mobile:grid-cols-1 mobile:pb-[6rem] mobile:pt-[17rem]">
           <div className="flex flex-col justify-start items-start gap-2">
             <h6 className="text-para font-semibold text-black-shade">
               City Hospital Trauma Center

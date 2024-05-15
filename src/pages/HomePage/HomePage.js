@@ -32,12 +32,12 @@ import CountUp from "react-countup";
 function HomePage() {
   const history = useNavigate();
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-[3rem]">
+    <div className="w-full flex flex-col items-center justify-center gap-[3rem] mobile:[2rem]">
       <div
         className="w-full py-4 px-[3%] pt-[2rem] bg-primary-green flex flex-col gap-2 backgroundPosition"
         style={{ backgroundImage: `url('${heroBackground}')` }}
       >
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
           <div className="flex flex-col items-start justify-start gap-2">
             <img
               src={herosectionImage1}
@@ -57,7 +57,7 @@ function HomePage() {
               situated hospital with cutting-edge amenities
             </p>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mobile:hidden">
             <img
               src={herosectionImage}
               alt="herosectionImage"
@@ -78,7 +78,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md">
+      <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md mobile:grid-cols-2 text-center">
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
             <CountUp
@@ -109,7 +109,7 @@ function HomePage() {
           <p className="font-medium text-semibold">Years Of Service</p>
         </span>{" "}
       </div>
-      <div className="w-11/12 py-4   grid grid-cols-2 gap-4 ">
+      <div className="w-11/12 py-4   grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse ">
         <div className="flex flex-col items-start justify-start gap-4">
           <h3 className="text-normalHeading green_color_linear font-semibold">
             ABOUT US
@@ -156,53 +156,53 @@ function HomePage() {
           into our blogs and updates to acquire valuable insights and stay
           updated on essential information for maintaining your well-being.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 mobile:grid-cols-1">
           <NewsUpdateCard />
           <NewsUpdateCard />
         </div>
       </div>
       <div
-        className="w-11/12 mb-[2rem] p-4 flex flex-col items-center justify-start gap-2 h-[20rem] rounded-md relative"
+        className="w-11/12 mb-[2rem] p-4 flex flex-col items-center justify-start gap-2 h-[20rem] rounded-md relative mobile:h-[48rem] mobile:bg-no-repeat mobile:bg-cover"
         style={{ backgroundImage: `url("${bg}")` }}
       >
         <h6 className="text-seconderyHeading font-semibold text-white">
           Departments
         </h6>
-        <div className="w-11/12 absolute bottom-[1rem] flex gap-4">
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+        <div className="w-11/12 absolute bottom-[1rem] flex gap-4 mobile:grid mobile:grid-cols-2 ">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             {/* <img src={bell} alt="" /> */}
             <HiOutlineBellAlert className="text-[3rem]" />
             <p>Emergency Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <MdOutlineGirl className="text-[3rem]" />
             <p>Pediatric Departement</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <GiKidneys className="text-[3rem]" />
             <p>Obstetrics and Gynecology Department</p>
           </span>{" "}
-          <span className=" w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+          <span className=" w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <FaHeartPulse className="text-[3rem]" />
             <p>Cardiology Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <GiBrain className="text-[3rem]" />
             <p>Neurology Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <GiPsychicWaves className="text-[3rem]" />
             <p>Psychiatry Department</p>
           </span>
         </div>
       </div>
       <div className="w-11/12 h-fit py-y px-4 green_gredient relative flex items-center justify-center rounded-md">
-        <img src={image} alt="" />
+        <img src={image} alt="" className="mobile:h-[72rem]" />
         <div className="w-11/12 absolute flex flex-col gap-4 items-center">
           <h6 className="text-seconderyHeading font-semibold text-white">
             Facilities We Provide
           </h6>
-          <div className=" grid grid-cols-4 gap-4">
+          <div className=" grid grid-cols-4 gap-4 mobile:grid-cols-2 ">
             <span className="p-4 py-[3rem] flex flex-col items-center justify-center bg-white rounded h-[15rem] gap-2 text-center">
               <img
                 src={Emergency}
@@ -317,9 +317,9 @@ function HomePage() {
           CHTC grant patients access to top-tier doctors in India, ensuring the
           highest standards of healthcare.
         </p>
-        <div className="w-11/12 grid grid-cols-3 gap-2">
+        <div className="w-11/12 grid grid-cols-3 gap-2 mobile:overscroll-none mobile:flex scroll_x">
           <DoctorCard
-            name={"desigitation"}
+            name={"Dr. Rajesh Mehta"}
             desigitation={"M.B.B.S. M.S. ( Orthopaedics ) Director: CHTC "}
           />
           <DoctorCard
@@ -338,7 +338,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="w-11/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-11/12 py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="col-span-1 flex flex-col items-start justify-start gap-2">
           <span>
             <p className="text-secondry-green text-normalHeading font-medium">
@@ -409,7 +409,7 @@ function HomePage() {
             </button>
           </from>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mobile:hidden">
           <img src={contacusimage} alt="contacusimage" className="h-[30rem]" />
         </div>
       </div>

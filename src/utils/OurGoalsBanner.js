@@ -4,10 +4,10 @@ import logo from "../assests/images/Group 119.png";
 function OurGoalsBanner() {
   return (
     <div className="w-full flex items-center justify-center relative mt-[3rem]">
-      <img src={img} alt="OurGoalsBanner" />
-      <div className="w-full absolute grid grid-cols-3 px-[3%] gap-4">
-        <span className="col-span-2 flex flex-col justify-start items-start gap-2">
-          <p className="text-normalHeading font-semibold text-white">
+      <img src={img} alt="OurGoalsBanner " className=" mobile:h-[20rem]" />
+      <div className="w-full absolute grid grid-cols-3 px-[3%] gap-4 mobile:grid-cols-1">
+        <span className="col-span-2 flex flex-col justify-start items-start gap-2 mobile:col-span-1">
+          <p className="text-normalHeading font-semibold text-white mobile:text-[1.2rem]">
             Our goal is to promote good health and spread smiles worldwide. At
             CHTC, you will always encounter compassion and a patient-cantered
             approach to healthcare
@@ -19,7 +19,7 @@ function OurGoalsBanner() {
         <img
           src={logo}
           alt="logo"
-          className="absolute bottom-[-7rem] right-[2rem] h-[30rem]"
+          className="absolute bottom-[-7rem] right-[2rem] h-[30rem] mobile:hidden"
         />
       </div>
     </div>

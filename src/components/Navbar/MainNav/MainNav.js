@@ -52,13 +52,14 @@ function MainNav() {
           : "w-full flex items-center justify-center bg-primary-green mainnav"
       }
     >
-      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z-999999">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z_index">
         <img
           src={logo}
           alt="logo"
-          className="w-[10rem] h-[4rem] object-contain"
+          className="w-[10rem] h-[4rem] object-contain text-[18px]"
+          onClick={() => history("/")}
         />
-        <ul className=" flex items-center gap-4">
+        <ul className=" flex items-center gap-4 mobile:hidden">
           <li>
             <NavLink
               to="/"
@@ -70,7 +71,7 @@ function MainNav() {
           </li>
           <li>
             <p
-              className="text-[#3D3D3D] font-semibold cursor-pointer"
+              className="text-[18px] text-[#3D3D3D] font-medium cursor-pointer"
               onClick={handleOpen}
             >
               About
@@ -115,11 +116,121 @@ function MainNav() {
         </ul>
         <button
           onClick={() => history("/contactus")}
-          className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md"
+          className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md mobile:hidden"
         >
           Get Started <ArrowForwardIcon />
         </button>
+        <div className="hamburger-menu hidden mobile:flex">
+          <input id="menu__toggle" type="checkbox" />
+          <label className="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul className="menu__box">
+            <li>
+              <NavLink
+                to="/"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Home{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutus"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                AboutUs{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutfacility"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                About Facility{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutusourmanagement"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Aboutus OurManagement
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutorthopaedic"
+                className="text-[18px] font-medium menu__item w-fit"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                About Orthopaedic
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/deparments"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Departments
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/ourdoctors"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Our Doctors{" "}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/successstories"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Success Stories
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contactus"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Contact us{" "}
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
