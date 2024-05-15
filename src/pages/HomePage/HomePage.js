@@ -81,25 +81,25 @@ function HomePage() {
       <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md">
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={4357} duration={10.75}></CountUp>
+            <CountUp start={0} end={4357} duration={5}></CountUp>
           </p>
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={2967} duration={10.75}></CountUp>
+            <CountUp start={0} end={2967} duration={5}></CountUp>
           </p>
           <p className="font-medium text-semibold">HIP REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={2237} duration={10.75}></CountUp>
+            <CountUp start={0} end={2237} duration={5}></CountUp>
           </p>
           <p className="font-medium text-semibold">ARTHROSCOPY SURGERIES</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={22} duration={10.75}></CountUp>+
+            <CountUp start={0} end={22} duration={10}></CountUp>+
           </p>
           <p className="font-medium text-semibold">Years Of Service</p>
         </span>{" "}
