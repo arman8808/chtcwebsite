@@ -24,7 +24,7 @@ function MainNav() {
   };
   let unActiveStyle = {
     color: "#3D3D3D",
-    fontweight: "500",
+    fontweight: "600",
     textDecoration: "none",
   };
   const style = {
@@ -52,13 +52,13 @@ function MainNav() {
           : "w-full flex items-center justify-center bg-primary-green mainnav"
       }
     >
-      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z-50">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z-999999">
         <img
           src={logo}
           alt="logo"
           className="w-[10rem] h-[4rem] object-contain"
         />
-        <ul className=" flex items-center gap-2">
+        <ul className=" flex items-center gap-4">
           <li>
             <NavLink
               to="/"
