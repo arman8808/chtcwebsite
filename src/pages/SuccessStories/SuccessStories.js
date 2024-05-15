@@ -3,6 +3,7 @@ import img from "../../assests/images/Rectangle 2771.png";
 import img1 from "../../assests/images/Rectangle 276.png";
 import img2 from "../../assests/images/Rectangle 278.png";
 import img3 from "../../assests/images/Rectangle 279.png";
+import OurGoalsBanner from "../../utils/OurGoalsBanner";
 function SuccessStories() {
   return (
     <div className="pagecss gap-[2rem]">
@@ -244,6 +245,9 @@ function SuccessStories() {
             />
           </div>
         </div>
+      </div>
+      <div className=" w-10/12 py-4">
+        <OurGoalsBanner />
       </div>
     </div>
   );

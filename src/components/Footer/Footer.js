@@ -81,7 +81,7 @@ function Footer() {
             <p className="para text-gray">
               to get the latest news about health from our experts
             </p>
-            <span className="border border-gray bg-white rounded p-4 rounded-[1.5rem]">
+            <span className="border border-gray bg-white rounded p-2 rounded-[1.5rem]">
               <input
                 type="text"
                 placeholder="Email Address"

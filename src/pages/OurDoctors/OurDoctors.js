@@ -1,5 +1,6 @@
 import React from "react";
 import DoctorCard from "../../components/DoctorCard/DoctorCard";
+import OurGoalsBanner from "../../utils/OurGoalsBanner";
 
 function OurDoctors() {
   return (
@@ -20,6 +21,9 @@ function OurDoctors() {
         <DoctorCard />
         <DoctorCard />
         <DoctorCard />
+      </div>
+      <div className=" w-10/12 py-4">
+        <OurGoalsBanner />
       </div>
     </div>
   );

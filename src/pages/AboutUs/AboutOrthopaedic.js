@@ -10,32 +10,35 @@ function AboutOrthopaedic() {
         <div className="w-full py-4  grid grid-cols-2 gap-4 rounded-md">
           <div className="flex items-start justify-center flex-col gap-2">
             <p className="para text-gray">
-              We provide state-of-the-art care that is second to none: both
-              because of the highly-advanced medical facilities available here
-              and the experienced team of orthopaedic surgeons striving to cater
-              to your needs by uniquely focusing on treating a wide spectrum of
-              musculoskeletal conditions. Our multidisciplinary team of highly
-              trained orthopaedic surgeons, physiotherapists, orthopaedic
-              traumatologists and other supporting staff offers advanced
-              treatment options including an array of sophisticated,
-              high-technology, diagnostic surgical and therapeutic care.
+              We offer cutting-edge healthcare services that are unmatched,
+              thanks to the advanced medical amenities on offer and our team of
+              seasoned orthopedic surgeons dedicated to addressing a diverse
+              range of musculoskeletal issues.
             </p>
             <p className="para text-gray">
-              The Department has a dedicated ICU which is manned by a team of
-              doctors trained in Advanced Trauma Life Support (ATLS) and
-              Advanced Cardiac Life Support (ACLS). We offer a range of
-              solutions including surgical interventions, pain management
-              therapies and nonsurgical treatments with a highly integrated
-              approach that get you back to doing the things you love. We treat
-              a variety of disorders of the musculoskeletal system including,
-              Management of fractures, ACL and arthroscopic surgeries, Minimally
-              Invasive Spine Surgery (MISS), Total Knee Replacement, Unicondylar
+              Our diverse group of expert orthopedic surgeons, physiotherapists,
+              orthopedic traumatologists, and additional support personnel
+              provide advanced treatment choices, encompassing a range of
+              cutting-edge diagnostic, surgical, and therapeutic interventions.
+            </p>
+            <p className="para text-gray">
+              The Department maintains a specialized ICU staffed by physicians
+              skilled in Advanced Trauma Life Support (ATLS) and Advanced
+              Cardiac Life Support (ACLS). We provide a variety of options,
+              including surgical procedures, pain management techniques, and
+              non-surgical therapies, employing a comprehensive approach to help
+              you resume activities you enjoy.{" "}
+            </p>
+            <p className="para text-gray">
+              We address diverse musculoskeletal disorders, such as fracture
+              management, ACL and arthroscopic surgeries, Minimally Invasive
+              Spine Surgery (MISS), Total Knee Replacement, Unicondylar
               (Partial) Knee Replacement Surgery, Hip replacement surgery,
-              Replacement Surgery of Shoulder (Including Total & Reverse
-              Shoulder) and Elbow joints, Limb Salvage Surgeries, and Bone Tumor
-              Surgeries. We have a dedicated speciality team for deformity
-              correction and Paediatric Orthopaedic conditions with decades of
-              trust and experience.
+              Shoulder Replacement Surgery (including Total & Reverse Shoulder),
+              Elbow joint replacement, Limb Salvage Surgeries, and Bone Tumor
+              Surgeries. Our specialized team focuses on deformity correction
+              and Pediatric Orthopedic conditions, boasting decades of trusted
+              expertise.
             </p>
           </div>
           <div className="flexcenter">

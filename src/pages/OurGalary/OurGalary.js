@@ -5,6 +5,7 @@ import img2 from "../../assests/images/Rectangle 278.png";
 import img3 from "../../assests/images/Rectangle 292.png";
 import img4 from "../../assests/images/Rectangle 277.png";
 import img5 from "../../assests/images/Rectangle 277.png";
+import OurGoalsBanner from "../../utils/OurGoalsBanner";
 function OurGalary() {
   return (
     <div className="pagecss w-full pt-[3rem] gap-[1rem]">
@@ -52,6 +53,9 @@ function OurGalary() {
             <img class="h-auto max-w-full rounded-lg" src={img5} alt="" />
           </div>
         </div>
+      </div>
+      <div className=" w-11/12 py-4">
+        <OurGoalsBanner />
       </div>
     </div>
   );

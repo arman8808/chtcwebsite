@@ -78,7 +78,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-11/12 bg-primary-green py-4 px-[5%] grid grid-cols-4 gap-4 rounded-md">
+      <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md">
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
             <CountUp start={0} end={4357} duration={10.75}></CountUp>
@@ -86,16 +86,22 @@ function HomePage() {
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">4,357</p>
-          <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
+          <p className="text-mainHeading font-bold text-white">
+            <CountUp start={0} end={2967} duration={10.75}></CountUp>
+          </p>
+          <p className="font-medium text-semibold">HIP REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">4,357</p>
-          <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
+          <p className="text-mainHeading font-bold text-white">
+            <CountUp start={0} end={2237} duration={10.75}></CountUp>
+          </p>
+          <p className="font-medium text-semibold">ARTHROSCOPY SURGERIES</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">4,357</p>
-          <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
+          <p className="text-mainHeading font-bold text-white">
+            <CountUp start={0} end={22} duration={10.75}></CountUp>+
+          </p>
+          <p className="font-medium text-semibold">Years Of Service</p>
         </span>{" "}
       </div>
       <div className="w-11/12 py-4   grid grid-cols-2 gap-4 ">
@@ -272,13 +278,30 @@ function HomePage() {
           </p>
         </span>
         <div className="w-full flex items-center justify-start gap-4 overflow-x-auto scroll_bar py-4">
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
+          <ReviewCard
+            name={"Aditya Bansal"}
+            story={
+              "Outstanding facility featuring esteemed Orthopedic Surgeons such as Dr. Rasjesh Mehta. The doctors are exceptionally humble, and the staff is commendable. Excellent value for the investment!"
+            }
+          />
+          <ReviewCard
+            name="Manish Anand "
+            story={
+              "A commendable healthcare hospitality, highly recommended for my loved ones. Offers a comprehensive range of medical and paramedical services! Thank you."
+            }
+          />
+          <ReviewCard
+            name={"Jyotsna Kaur"}
+            story={
+              "Highly professional doctors, excellent facilities, and prompt responsiveness!"
+            }
+          />
+          <ReviewCard
+            name={"Aditya Bansal"}
+            story={
+              "Outstanding facility featuring esteemed Orthopedic Surgeons such as Dr. Rasjesh Mehta. The doctors are exceptionally humble, and the staff is commendable. Excellent value for the investment!"
+            }
+          />
         </div>
       </div>
       <div className="w-11/12 py-4   flex flex-col items-center justify-center gap-2">
@@ -290,9 +313,24 @@ function HomePage() {
           highest standards of healthcare.
         </p>
         <div className="w-11/12 grid grid-cols-3 gap-2">
-          <DoctorCard />
-          <DoctorCard profile={doctor} />
-          <DoctorCard profile={doctor1} />
+          <DoctorCard
+            name={"desigitation"}
+            desigitation={"M.B.B.S. M.S. ( Orthopaedics ) Director: CHTC "}
+          />
+          <DoctorCard
+            name={"Dr. Rohil Mehta"}
+            desigitation={
+              "MBBS, M.S. ( Orthopaedics ), D.N.B. ( Orthopaedics )"
+            }
+            profile={doctor}
+          />
+          <DoctorCard
+            name={"Dr. Jyotsna Mehta"}
+            desigitation={
+              "M.B.B.S. , D.G.O. Senior Gynaecologist & Director: CHTC"
+            }
+            profile={doctor1}
+          />
         </div>
       </div>
       <div className="w-11/12 py-4  grid grid-cols-2 gap-4">

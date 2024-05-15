@@ -10,22 +10,42 @@ function AboutUs() {
             About Us
           </h2>
           <p className="para text-gray">
-            Dr Rajesh Mehta is considered to be the pioneer of joint replacement
-            surgeries in Uttar Pradesh and is a surgeon of national repute for
-            hip and knee arthroplasty surgeries. He has operated more than 2000
-            joint replacement surgeries including difficult revision surgeries
-            and salvaging infected and failed joint replacements operated
-            elsewhere.
+            The presence of City Hospital & Trauma Centre stems from a
+            two-decade heritage of compassion and originality fostered by CHTC
+            Ltd. In a brief span since its establishment, CHTC has emerged as a
+            prominent healthcare provider, establishing a robust presence in the
+            northern regions of the nation, including Lucknow. The hospital
+            meets the community's requirements in its selected area of
+            super-specialty, including Orthopedics, Gynecology, & Paramedical.
           </p>
           <p className="para text-gray">
-            Trained in Liverpool, United Kingdom, he is one of the first
-            surgeons to perform knee replacement surgeries in Uttar Pradesh and
-            has treated many prominent names for various knee conditions over
-            the last 3 decades with the likes of Late Shri Atal Bihari Vajpayee
-            Ji. Dr Rajesh Mehta is a synonym for trust in the Lucknow households
-            and continues to serve Uttar Pradesh with his surgical services in
-            trauma, arthroscopic surgeries of knee and shoulder and joint
-            replacement surgeries.
+            CHTC is a tertiary care hospital with multiple specialties,
+            constructed according to global standards. Its operation is based on
+            the principle of prioritizing patients. The hospital is housed in a
+            centrally air-conditioned building with 150 beds and equipped with
+            contemporary civil amenities and facilities.
+          </p>
+          <p className="para text-gray">
+            We implement quality systems driven by processes that conform to
+            global standards of clinical care, ensuring a safe environment,
+            infection control, and the preservation of patient rights and
+            privacy. With cutting-edge multidisciplinary capabilities, along
+            with world-class infrastructure and technology, we enhance the
+            quality of life for each patient in a compassionate and supportive
+            setting, with utmost regard for human dignity and life.
+          </p>
+          <p className="para text-gray">
+            The hospital commenced operations in 2000 with a 50-bed setup and
+            has since grown to a 150-bed facility, offering various specialties
+            and modern amenities, along with extensive expertise in surgical and
+            medical care. CHTC is renowned for its advanced orthopedic
+            procedures, encompassing intricate knee and hip replacements, knee
+            and shoulder arthroscopic surgeries, and a trauma center catering to
+            various severe injuries. Additionally, the center has earned a
+            longstanding reputation for its maternal and child care unit,
+            equipped with a comprehensive NICU. CHTC is also distinguished for
+            its plastic surgery and microvascular surgery department, which
+            includes cosmetic procedures.
           </p>
         </div>
         <div className="flexcenter">
@@ -37,41 +57,39 @@ function AboutUs() {
         </div>
       </div>
       <div className="w-10/12 py-4  grid grid-cols-2 gap-4 rounded-md">
-        <div className="flex items-center">
+        <div className="flex items-center flex-col gap-1">
           <img
             src={aboutimg}
             alt="about"
             className="h-[25rem] w-[80%] object-cover rounded"
           />
+          <div className="flex items-start justify-start w-[80%] gap-1 flex-col ">
+            <p className="font-semibold">Dr. Rajesh Mehta</p>
+            <p className="text-gray">
+              M.B.B.S, M.S. (Ortho), Fellowship in Joint Replacement
+            </p>
+            <p className="text-gray">
+              (Liverpool, U.K.), Revision Joint Replacement and Arthroscopy
+              (Berlin, Germany)
+            </p>
+          </div>
         </div>
         <div className="flex items-start justify-start flex-col gap-2">
           <p className="para text-gray">
-            At CHTC, you receive healthcare comparable to the finest in the
-            world. CHTC is a multispecialty tertiary care hospital built as per
-            Global Standard. It works on the principle of PATIENT FIRST The
-            Hospital is 150 bedded plus centrally air-condition building of with
-            all modern civil amenities and facilities. CHTC is a well equipped
-            hospital with all modern gadgets and latest technologies backed by a
-            team of highly professionals experienced and well qualified staff,
-            work duty and night to raise the level of treatment to the
-            extent- Our best will be the Nation’s best in the Medical Treatment.
+            Dr. Rajesh Mehta is recognized as a trailblazer in joint replacement
+            surgeries within Uttar Pradesh and is nationally esteemed for his
+            expertise in hip and knee arthroplasty procedures. He has conducted
+            over 2000 joint replacement surgeries, which include challenging
+            revision surgeries and salvaging infected and unsuccessful joint
+            replacements performed elsewhere.
           </p>
           <p className="para text-gray">
-            The hospital started in the year 2000 as a 50 bed setup and has now
-            been expanded into a 150 bed setup with multiple specialities and
-            state of the art facilities and experience in surgical and medical
-            care. The building boasts of it’s accessible location, luxurious
-            rooms, modern modular operation theatres and an excellent critical
-            care unit. The centre is acknowledged for it’s advanced orthopaedic
-            surgeries including complex knee and hip replacement surgeries, knee
-            and shoulder arthroscopic surgeries, trauma centre for complex
-            injuries of all kinds. The centre has a long standing fame for it’s
-            mother and child care unit with a complete NICU. CHTC is also known
-            for it’s plastic surgery and micro-vascular surgery department,
-            including cosmetic surgeries.It boasts of a dental unit dealing with
-            all specialities of dental care and facio-maxillary trauma. There is
-            more than two decades of trust behind this setup in view of
-            laparoscopic and urology surgeries.
+            Dr. Rajesh Mehta is recognized as a trailblazer in joint replacement
+            surgeries within Uttar Pradesh and is nationally esteemed for his
+            expertise in hip and knee arthroplasty procedures. He has conducted
+            over 2000 joint replacement surgeries, which include challenging
+            revision surgeries and salvaging infected and unsuccessful joint
+            replacements performed elsewhere.
           </p>
         </div>
       </div>

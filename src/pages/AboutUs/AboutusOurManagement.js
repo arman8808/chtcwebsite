@@ -16,21 +16,30 @@ function AboutusOurManagement() {
           <h4 className="text-seconderyHeading font-semibold text-secondry-green">
             Dr.Rajesh Mehta
           </h4>
-          <p className="text-para font-medium text-black-shade">Director</p>
+          <p className="text-para font-medium text-black-shade">
+            M.B.B.S, M.S. (Ortho), Fellowship in Joint Replacement
+          </p>
+          <p className="text-para font-medium text-black-shade">
+            (Liverpool, U.K.), Revision Joint Replacement and Arthroscopy
+            (Berlin, Germany)
+          </p>
           <p className="para text-gray">
-            Dr Rajesh Mehta is considered to be the pioneer of joint replacement
-            surgeries in Uttar Pradesh and is a surgeon of national repute for
-            hip and knee arthroplasty surgeries. He has operated more than 2000
-            joint replacement surgeries including difficult revision surgeries
-            and salvaging infected and failed joint replacements operated
-            elsewhere. Trained in Liverpool, United Kingdom, he is one of the
-            first surgeons to perform knee replacement surgeries in Uttar
-            Pradesh and has treated many prominent names for various knee
-            conditions over the last 3 decades with the likes of Late Shri Atal
-            Bihari Vajpayee Ji. Dr Rajesh Mehta is a synonym for trust in the
-            Lucknow households and continues to serve Uttar Pradesh with his
-            surgical services in trauma, arthroscopic surgeries of knee and
-            shoulder and joint replacement surgeries.
+            Dr. Rajesh Mehta is widely acknowledged as a trailblazer in joint
+            replacement surgeries within Uttar Pradesh and enjoys national
+            acclaim as a surgeon specializing in hip and knee arthroplasty
+            procedures. He has performed over 2000 joint replacement surgeries,
+            encompassing challenging revision surgeries and addressing
+            infections and failures in joint replacements conducted elsewhere.
+          </p>
+          <p className="para text-gray">
+            Having received training in Liverpool, United Kingdom, he stands as
+            one of the initial surgeons to conduct knee replacement procedures
+            in Uttar Pradesh. Over the past three decades, he has treated
+            numerous notable individuals for diverse knee conditions, including
+            the late Shri Atal Bihari Vajpayee Ji. Dr. Rajesh Mehta is
+            synonymous with trust in Lucknow households, persistently delivering
+            surgical services in trauma, knee and shoulder arthroscopic
+            surgeries, and joint replacement procedures across Uttar Pradesh.{" "}
           </p>
         </div>
         <div className="flexcenter">
@@ -51,20 +60,25 @@ function AboutusOurManagement() {
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading font-semibold text-secondry-green">
-            Dr.Jyotsna Mehta
-            <p className="text-para font-medium text-black-shade">Director</p>
+            Dr. Jyotsna Mehta
+            <p className="text-para font-medium text-black-shade">
+              M.B.B.S. , D.G.O.
+            </p>
+            <p className="text-para font-medium text-black-shade">
+              Senior Gynaecologist & Director , CHTC
+            </p>
           </h2>
           <p className="para text-gray">
-            Dr. Jyotsna Mehta is an Obstetrician and Gynaecologist with over 20
-            years of extensive working experience, currently practising at City
-            Hospital and Trauma Centre in Alambagh, Lucknow. She specialises in
-            infertility treatment, adolescent gynaecology and obstetric care.
-            Dr. Mehta completed her MBBS and also earned the DGO qualification
-            to her name. After that, she received training in Intrauterine
-            Insemination and Assisted Reproductive Techniques at Dr. B N
-            Chakravorty’s Institute of Reproductive Techniques located in
-            Kolkata, West Bengal. She was attached to Sawhney Nursing Home as a
-            Consultant in Gynaecology and Obstetrics department for 20 years.
+            Dr. Jyotsna Mehta, an Obstetrician and Gynecologist, brings over two
+            decades of extensive experience to her practice at City Hospital and
+            Trauma Centre in Alambagh, Lucknow. Her areas of expertise include
+            infertility treatment, adolescent gynecology, and obstetric care.
+            Dr. Mehta obtained her MBBS and DGO qualifications before pursuing
+            training in Intrauterine Insemination and Assisted Reproductive
+            Techniques at Dr. B N Chakravorty’s Institute of Reproductive
+            Techniques in Kolkata, West Bengal. She served as a Consultant in
+            the Gynecology and Obstetrics department at Sawhney Nursing Home for
+            20 years.
           </p>
         </div>
       </div>{" "}
@@ -73,12 +87,25 @@ function AboutusOurManagement() {
           <h2 className="text-seconderyHeading font-bold text-navy-blue">
             Our Vision
           </h2>
+          <p>
+            Our goal is to become the preferred hospital in the state of Uttar
+            Pradesh by:
+          </p>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- To be the hospital of choice for the state of U.P.</li>
-            <li>- Promote “Patient First” and ethical healthcare.</li>
-            <li>- Meeting the global benchmarks for treatment protocols.</li>
             <li>
-              - Becoming a National Level Orthopaedic Centre of Excellence.
+              - Prioritizing patient well-being and adhering to ethical
+              healthcare practices.
+            </li>
+            <li>
+              - Prioritizing patient well-being and adhering to ethical
+              healthcare practices.
+            </li>
+            <li>
+              - Aligning with international standards for treatment protocols.
+            </li>
+            <li>
+              - Achieving recognition as a nationally renowned Orthopedic Centre
+              of Excellence.
             </li>
           </ul>
         </div>
@@ -103,10 +130,10 @@ function AboutusOurManagement() {
             Our Mission
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- Affordable healthcare.</li>
-            <li>- Comfortable and Home-like environment.</li>
+            <li>- Accessible healthcare at reasonable prices</li>
+            <li>- Providing a cozy and homely atmosphere</li>
             <li>
-              - Taking care of everything for the patient- “From care to cure”.
+              - Ensuring comprehensive patient care from treatment to recovery
             </li>
           </ul>
         </div>
@@ -116,8 +143,9 @@ function AboutusOurManagement() {
           <h2 className="text-seconderyHeading font-bold text-navy-blue">
             Our Values
           </h2>
+
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>Passport to complete healthcare-.</li>
+            <li>The roadmap to comprehensive healthcare:</li>
             <li>C- Competent Care.</li>
             <li>H- Hospitality.</li>
             <li>T- Team Spirit.</li>
@@ -148,44 +176,64 @@ function AboutusOurManagement() {
             <span className="flex items-start justify-start flex-col gap-1">
               <img src={Icon} alt="Icon" />
               <h6 className="text-normalHeading font-semibold  text-secondry-green">
-                Experienced Medical Professionals
+                Medical Guidance
               </h6>
               <p className="para text-gray">
-                Our team includes experienced doctors, nurses, and other
-                healthcare professionals who are dedicated to providing the best
-                possible care to our patients.
+                Prior to any procedure, we ensure that the patient undergoes a
+                thorough counseling session to mentally prepare for the
+                treatment.
               </p>
             </span>{" "}
             <span className="flex items-start justify-start flex-col gap-1">
               <img src={Icon2} alt="Icon" />
               <h6 className="text-normalHeading font-semibold  text-secondry-green">
-                Comprehensive Services
+                Expert Assistance
               </h6>
               <p className="para text-gray">
-                We offer a wide range of healthcare services, from preventive
-                care to specialized treatment for complex conditions.
+                Our staff, including doctors, nurses, and front office
+                personnel, are extensively trained to provide top-notch services
+                during your hospital stay.
               </p>
             </span>{" "}
             <span className="flex items-start justify-start flex-col gap-1">
               <img src={Icon3} alt="Icon" />
               <h6 className="text-normalHeading font-semibold  text-secondry-green">
-                Patient-centered Approach
+                Round-the-Clock Assistance
               </h6>
               <p className="para text-gray">
-                We believe in treating each patient as an individual, and we
-                take the time to understand your unique health needs and
-                concerns.
+                We offer efficient services for emergencies 24 hours a day,
+                ensuring we're ready whenever needed.
               </p>
             </span>{" "}
             <span className="flex items-start justify-start flex-col gap-1">
               <img src={Icon4} alt="Icon" />
               <h6 className="text-normalHeading font-semibold  text-secondry-green">
-                State-of-the-art Facilities
+                Accredited Medical Facilities
               </h6>
               <p className="para text-gray">
-                Our healthcare center is equipped with the latest technology and
-                equipment to provide our patients with the most advanced care
-                possible.
+                All treatment facilities provided to patients are licensed and
+                meet stringent quality standards.
+              </p>
+            </span>{" "}
+            <span className="flex items-start justify-start flex-col gap-1">
+              <img src={Icon4} alt="Icon" />
+              <h6 className="text-normalHeading font-semibold  text-secondry-green">
+                Highly Skilled Doctors
+              </h6>
+              <p className="para text-gray">
+                Our doctors possess extensive training, experience, and
+                expertise in their respective fields. They adhere to streamlined
+                protocols when treating patients.
+              </p>
+            </span>
+            <span className="flex items-start justify-start flex-col gap-1">
+              <img src={Icon4} alt="Icon" />
+              <h6 className="text-normalHeading font-semibold  text-secondry-green">
+                Focused Patient Support
+              </h6>
+              <p className="para text-gray">
+                Our team of nurses is comprised of qualified, experienced, and
+                compassionate individuals who excel in patient care.
               </p>
             </span>
           </div>

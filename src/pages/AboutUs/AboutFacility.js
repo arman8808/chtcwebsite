@@ -91,20 +91,28 @@ function AboutFacility() {
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
             <li>
-              - State of the Art centralised 24*7 Advanced Pathology &
-              Microbiology lab.
+              - Cutting-edge centralized 24/7 Advanced Pathology & Microbiology
+              lab
             </li>
             <li>
-              - All Pathological and Microbiological tests are covered except
-              few.
+              - Cutting-edge centralized 24/7 Advanced Pathology & Microbiology
+              lab
             </li>
-            <li>- Well qualified and trained team.</li>
+            <li>- Staffed by a well-qualified and trained team</li>
             <li>- Less TAT with emailing of reports & SMS facility.</li>
             <li>
-              - Highly reliable patient results because of optimisation of
-              different test processes.
+              - Provides quick Turnaround Time (TAT) and offers email and SMS
+              reporting
             </li>
-            <li>- Advanced LIS system with bar coding of all samples.</li>
+            <li>
+              - Ensures highly reliable patient results through optimized
+              testing processes.
+            </li>
+            <li>- Adheres to NABL standards for processes</li>
+            <li>
+              - Utilizes an advanced Laboratory Information System (LIS) with
+              barcoding for all samples
+            </li>
           </ul>
         </div>
         <div className="flexcenter">
@@ -187,14 +195,17 @@ function AboutFacility() {
             24*7 Accident & Emergency Care
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- 24*7 Accident & Emergency Care.</li>
+            <li>- 24/7 Accident & Emergency Care services</li>
             <li>
-              - with state of the art equipment like defibrillators, crash carts
-              and cardiac & vital signs monitors etc..
+              - Equipped with state-of-the-art tools including defibrillators,
+              crash carts, and cardiac & vital signs monitors
             </li>
-            <li>- Trauma OT within Casualty.</li>
-            <li>- Well qualified team.</li>
-            <li>- 24*7 Emergency Ambulance Services.</li>
+            <li>
+              - Features a Trauma Operating Theatre within the Casualty
+              department
+            </li>
+            <li>- Staffed by a team of well-qualified professionals</li>
+            <li>- Offers round-the-clock Emergency Ambulance Services</li>
           </ul>
         </div>
         <div className="flexcenter">
@@ -223,20 +234,23 @@ function AboutFacility() {
             Critical Care Unit
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- State of the art fully equipped intensive care.</li>
+            <li>- State-of-the-art fully equipped intensive care unit</li>
             <li>
-              - Acute physiologic care systems, pulse oximeters, apnea monitors
-              and ICT monitors..
+              - Features acute physiologic care systems, pulse oximeters, apnea
+              monitors, and ICT monitors
             </li>
             <li>
-              - Crash carts, ventilators, infusion pumps and Intra-Aortic
-              Balloon Pumps(IABP) for life support and emergency resuscitation.
+              - Equipped with essential life support and emergency resuscitation
+              tools including crash carts, ventilators, infusion pumps, and
+              Intra-Aortic Balloon Pumps (IABP)
             </li>
             <li>
-              - Mobile x-ray for bedside radiography, mobile USG, portable
-              clinical laboratory devices.
+              - Offers mobile x-ray for bedside radiography, mobile ultrasound
+              (USG), and portable clinical laboratory devices
             </li>
-            <li>- Highly skilled medical as well as Para-medical personnel.</li>
+            <li>
+              - Staffed by highly skilled medical and para-medical personnel
+            </li>
           </ul>
         </div>
         <div className="flexcenter">
@@ -260,15 +274,14 @@ function AboutFacility() {
             ICU & NICU
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- Neonatal ICU with beds</li>
-            <li>- Ventilators from Maquet .</li>
+            <li>- Neonatal ICU equipped with beds</li>
+            <li>- Ventilators sourced from Maquet</li>
             <li>
-              - Central monitoring systems so as to provide complete intensive
-              care.
+              - Central monitoring systems for comprehensive intensive care
             </li>
             <li>
-              - Well Equipped NICU with Neonatal Ventilator, Incubators,
-              Warmers, Phototherapy units.
+              - Well-equipped NICU including neonatal ventilators, incubators,
+              warmers, and phototherapy units
             </li>
           </ul>
           <h2 className="text-seconderyHeading semibold text-secondry-green">
@@ -289,67 +302,57 @@ function AboutFacility() {
           </h2>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
             <li>
-              - A 150 bedded hospital for reliable and cost effective health
-              care.
+              - A 150-bed hospital offering dependable and economical healthcare
+              services
             </li>
             <li>
-              - Trained and experienced staff with equipment to deal with kinds
-              of emergencies and trauma.
+              - Staffed by proficient and experienced personnel capable of
+              managing various emergencies and trauma cases
             </li>
             <li>
-              - State of the art well furnished beds of all categories Suite,
-              semi private ward, private ward, general ward and intensive care
-              beds.
+              - Features well-appointed beds in Suite, semi-private, private,
+              general, and intensive care categories
             </li>
             <li>
-              - State of the art operation theatres(3 Modular Operation Theatres
-              ) to deal with all kinds of operations.
+              - Features well-appointed beds in Suite, semi-private, private,
+              general, and intensive care categories
             </li>
             <li>
-              - Highly qualified and skilled team of surgeons  to perform all
-              the latest and advanced surgery like micro vascular surgeries,
-              limb salvaging surgeries, facia-maxillary, laparoscopy,
-              cystoscopy, endoscopy, T.U.R. cancer surgeries, deformity
-              correction plastic & cosmetic surgery.
+              - Boasts a skilled team of surgeons proficient in advanced
+              procedures like microvascular surgeries, limb salvaging surgeries,
+              facio-maxillary surgeries, laparoscopy, cystoscopy, endoscopy,
+              T.U.R. cancer surgeries, deformity correction, and plastic &
+              cosmetic surgery
             </li>
             <li>
-              - A Renowned centre to deal with all kind of trauma, orthopedics
-              and joint replacement surgeries.
+              - Recognized for its excellence in trauma care, orthopedics, and
+              joint replacement surgeries
             </li>
             <li>
-              - Well-trained and courteous medical and Para-medical hospital
-              staff.
-            </li>
-            <li>- 24 hrs. Emergency Services</li>
-            <li>- 24 hrs. Lab Services</li>
-            <li>- 24hrs.Chemist Shop</li>
-            <li>- 24hrs.Ambulance Services</li>
-            <li>- Complete ICU/ICCU/NICU</li>
-            <li>
-              - Well equipped physiotherapy unit with gadgets and well qualified
-              physiotherapists
-            </li>
-            <li>- Trauma care facilities of international standard</li>
-            <li>
-              - All kind of trauma and joint care facilities includes special
-              clinic in orthopedics
+              - Staffed by courteous and well-trained medical and para-medical
+              personnel
             </li>
             <li>
-              - Joint care clinic – including joint replacement for all major
-              joints
+              - Offers round-the-clock emergency services, lab services, chemist
+              shop, and ambulance services
+            </li>
+            <li>- Provides comprehensive ICU/ICCU/NICU facilities</li>
+            <li>
+              - Houses a well-equipped physiotherapy unit staffed with qualified
+              therapists
             </li>
             <li>
-              - Arthroscopy (Endoscopic surgery for knee and shoulder, sports
-              medicine clinic )
+              - Adheres to international standards in trauma care facilities
             </li>
             <li>
-              - Deformity correction of limbs and spine for correction of
-              congenital and post traumatic deformities
+              - Features specialized orthopedic clinics focusing on joint
+              replacement surgeries and arthroscopy
             </li>
-            <li>- Spinal surgeries and backache treatment</li>
-            <li>- Limb salvaging surgery</li>
-            <li>- Hand surgery</li>
-            <li>- Fitness clinic</li>
+            <li>
+              - Services include deformity correction of limbs and spine, spinal
+              surgeries, limb salvaging surgery, hand surgery, and fitness
+              clinic
+            </li>
           </ul>
         </div>
       </div>
@@ -415,15 +418,14 @@ function AboutFacility() {
           </h6>{" "}
           <ul className="text-black-shade font-semibold text-[1.2rem]">
             <li>
-              - Three operation theaters equipped with equipment's of
-              international standard & supported by highly skilled medical and
-              paramedical staff..
+              - Three operation theaters furnished with internationally
+              standardized equipment and backed by highly skilled medical and
+              paramedical teams.
             </li>
             <li>
-              - For endoscopic removal of gall bladder, uterus appendices and
-              hernia repair etc..
+              - Capable of performing endoscopic procedures such as gall
+              bladder, uterus, appendices removal, and hernia repair.
             </li>
-            <li>- Minor O.T.</li>
           </ul>
         </div>
       </div>
@@ -434,43 +436,57 @@ function AboutFacility() {
           </h2>
           <h6 className="text-normalHeading semibold text-secondry-green">
             {" "}
-            Anti natal & post natal clinic
+            Anti Natal & Post Natal Clinic
           </h6>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
             <li>
-              - Well equipped & neonatal facilities with well trained staff.
+              - Modern labor room and operation theater facilitated by highly
+              skilled and well-trained staff, providing round-the-clock services
+              for:
+            </li>
+            <li>- Antenatal and postnatal care.</li>
+            <li>
+              - Well-equipped neonatal facilities staffed by trained
+              professionals.
             </li>
             <li>
-              - Well women clinic for counseling of family planning, menopause,
-              awareness of genital cancer etc.
+              - Well-women clinic offering counseling on family planning,
+              menopause, and awareness of genital cancer, among other topics.
             </li>
-            <li>- Menopause clinic.</li>
+            <li>- Menopause clinic providing specialized care.</li>
             <li>
-              - Cancer detection & awareness clinic in female (for breast and
-              cervical cancer)..
+              - Cancer detection and awareness clinic focusing on breast and
+              cervical cancer in females.
             </li>
           </ul>
           <h6 className="text-normalHeading semibold text-secondry-green">
             OTHER SPECIAL FACILITIES
           </h6>
           <ul className="text-black-shade font-semibold text-[1.2rem]">
-            <li>- Panel of Doctors are the best & cover all fields.</li>
-            <li>- Medical Officers Round the clock for each ward.</li>
-            <li>- Trained Nursing & Paramedical Staff round the clock.</li>
-            <li>- 24 Hours 7 days a week Help-line services.</li>
-            <li>- Trauma Centre, Total Cardiac facilities.</li>
-            <li>- Infertility Clinic, Neo-natal care unit.</li>
-            <li>- Home visit for Physiotherapy.</li>
-            <li>- On-line medical help line.</li>
             <li>
-              - Free health detection camps (including specialty subject).
+              - Expert panel of doctors covering almost all medical fields.
             </li>
-            <li>- WHO approved Hepatitis – B vaccination facilities.</li>
-            <li>- Health Checkup plans. Regular Medical Education camps.</li>
-            <li>- Medical advisory board.</li>
+            <li>- Medical officers available round the clock for each ward.</li>
             <li>
-              - For endoscopic removal of gall bladder, uterus appendices and
-              hernia repair etc..
+              - Trained nursing and paramedical staff providing 24/7 care.
+            </li>
+            <li>- Help-line services available 24/7.</li>
+            <li>- Comprehensive trauma center and cardiac facilities.</li>
+            <li>
+              - Specialized clinics including infertility, neonatal care, and
+              hepatitis-B vaccination.
+            </li>
+            <li>- Home visits offered for physiotherapy sessions.</li>
+            <li>- Accessible online medical helpline.</li>
+            <li>
+              - Regular free health detection camps, including specialty
+              subjects.
+            </li>
+            <li>- Health checkup plans and regular medical education camps.</li>
+            <li>- Medical advisory board overseeing operations.</li>
+            <li>
+              - Advanced endoscopic procedures for gall bladder, uterus,
+              appendices, and hernia repair.
             </li>
           </ul>
         </div>
