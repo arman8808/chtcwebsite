@@ -7,7 +7,7 @@ function DoctorCard({ profile, name, desigitation }) {
       <img
         src={profile ? profile : img}
         alt="doctor"
-        className="h-[20rem] w-full object-contain rounded"
+        className="h-[20rem] w-full object-contain rounded-md"
       />
       <span className="flexcenter flex-col">
         {" "}

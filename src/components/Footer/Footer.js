@@ -22,7 +22,7 @@ function Footer() {
         <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[6rem] absolute">
           <div className="flex flex-col justify-start items-start gap-2">
             <h6 className="text-para font-semibold text-black-shade">
-              ProHealth Medical & Healthcare Center
+              City Hospital Trauma Center
             </h6>
             <span className="flex items-start justify-start gap-2">
               <p className="p-1 bg-primary-green rounded-full">

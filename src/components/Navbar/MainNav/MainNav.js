@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../../../assests/images/logo-01-01 1.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./MainNav.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal } from "@mui/material";
 import { Slide } from "@mui/material";
 function MainNav() {
@@ -43,6 +43,7 @@ function MainNav() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const history = useNavigate();
   return (
     <div
       className={
@@ -51,7 +52,7 @@ function MainNav() {
           : "w-full flex items-center justify-center bg-primary-green mainnav"
       }
     >
-      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z-50">
         <img
           src={logo}
           alt="logo"
@@ -112,7 +113,10 @@ function MainNav() {
             </NavLink>
           </li>
         </ul>
-        <button className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md">
+        <button
+          onClick={() => history("/contactus")}
+          className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md"
+        >
           Get Started <ArrowForwardIcon />
         </button>
       </div>

@@ -8,17 +8,17 @@ function SubNav() {
         <span className="flex justify-center items-center gap-1 text-white">
           <LocationOn style={{ fontSize: "1.3rem" }} />
           <p className="text-[14px]">
-            Jl Danau Bratan, Malang City, East Java 65139
+            ALAMBAGH, LUCKNOW, UTTAR PRADESH, 226005
           </p>
         </span>
         <div className="flex justify-center items-center gap-2 ">
           <span className="flex justify-center items-center pr-1 gap-1 border-r-[2px] text-white">
             <Phone style={{ fontSize: "1.3rem" }} />
-            <p className="text-[14px]">+62 864 6444 2222</p>
+            <p className="text-[14px]">+91 9119900861</p>
           </span>
           <span className="flex justify-center items-center pr-1 gap-1 text-white">
             <Email style={{ fontSize: "1.3rem" }} />
-            <p className="text-[14px]">hi@happydental.com</p>
+            <p className="text-[14px]">city.lko@gmail.com</p>
           </span>
         </div>
       </div>
