@@ -99,7 +99,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-secondry-green w-full py-3 px-[5%] flex items-center justify-between">
+      <div className="bg-secondry-green w-full py-3 px-[5%] flex items-center justify-between mobile:flex-col mobile:text-center mobile:justify-center mobile:gap-2">
         <span className="flex justify-start items-center gap-2 text-white">
           <p>Follow Us</p>
           <Facebook />

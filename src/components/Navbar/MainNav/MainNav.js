@@ -48,11 +48,11 @@ function MainNav() {
     <div
       className={
         scrolled
-          ? "w-full flex items-center justify-center  mainnav"
-          : "w-full flex items-center justify-center bg-primary-green mainnav"
+          ? "w-full flex items-center justify-center  mainnav z_index"
+          : "w-full flex items-center justify-center bg-primary-green mainnav z_index"
       }
     >
-      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow z_index">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow ">
         <img
           src={logo}
           alt="logo"
@@ -214,6 +214,28 @@ function MainNav() {
                 }
               >
                 Success Stories
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/ourgalary"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Our Galary
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/logosgalary"
+                className="text-[18px] font-medium menu__item"
+                style={({ isActive }) =>
+                  isActive ? activeStyle : unActiveStyle
+                }
+              >
+                Logos Galary
               </NavLink>
             </li>
             <li>

@@ -7,7 +7,7 @@ function AboutFacility() {
         <h2 className="text-mainHeading font-bold text-navy-blue">
           Facilities
         </h2>
-        <div className="w-full grid grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-2 gap-4 mobile:grid-cols-1">
           <div className="flex justify-start items-start flex-col gap-2">
             <h6 className="text-normalHeading semibold text-secondry-green">
               Overview - Facility
@@ -39,7 +39,7 @@ function AboutFacility() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             Ultrasound
@@ -54,16 +54,16 @@ function AboutFacility() {
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -84,7 +84,7 @@ function AboutFacility() {
           </ul>
         </div>
       </div>{" "}
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             Pathology & Microbiology
@@ -119,16 +119,16 @@ function AboutFacility() {
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -144,7 +144,7 @@ function AboutFacility() {
           </ul>
         </div>
       </div>{" "}
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             Urology & Nephrology
@@ -163,16 +163,16 @@ function AboutFacility() {
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -189,7 +189,7 @@ function AboutFacility() {
           </ul>
         </div>
       </div>{" "}
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             24*7 Accident & Emergency Care
@@ -212,11 +212,11 @@ function AboutFacility() {
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12 py-4  grid grid-cols-1 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-1 gap-4 ">
         <div className="flexcente gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             Modular OT’S
@@ -228,7 +228,7 @@ function AboutFacility() {
           />
         </div>
       </div>
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading semibold text-secondry-green">
             Critical Care Unit
@@ -257,16 +257,16 @@ function AboutFacility() {
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg1}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -295,7 +295,7 @@ function AboutFacility() {
           </ul>
         </div>
       </div>{" "}
-      <div className="w-10/12 py-4  grid grid-cols-1 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-1 gap-4 ">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading font-semibold text-navy-blue">
             All Facilities

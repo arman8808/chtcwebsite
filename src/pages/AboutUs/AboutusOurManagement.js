@@ -8,7 +8,7 @@ import Icon3 from "../../assests/images/icons/Icon4.png";
 function AboutusOurManagement() {
   return (
     <div className="pagecss gap-[3rem]">
-      <div className="w-10/12 py-4 pt-[2rem]   grid grid-cols-2 gap-4 rounded-md">
+      <div className="w-10/12 py-4 pt-[2rem]   grid grid-cols-2 gap-4 rounded-md mobile:flex mobile:flex-col-reverse">
         <div className="flex items-start justify-center flex-col gap-2">
           <h2 className="text-mainHeading font-bold text-navy-blue">
             Our Management Team
@@ -46,16 +46,16 @@ function AboutusOurManagement() {
           <img
             src={aboutimg}
             alt="about"
-            className="h-[25rem] w-[80%] object-cover rounded"
+            className="h-[25rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12 py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -82,7 +82,7 @@ function AboutusOurManagement() {
           </p>
         </div>
       </div>{" "}
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading font-bold text-navy-blue">
             Our Vision
@@ -113,16 +113,16 @@ function AboutusOurManagement() {
           <img
             src={aboutimg}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
@@ -138,7 +138,7 @@ function AboutusOurManagement() {
           </ul>
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-2 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse">
         <div className="flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading font-bold text-navy-blue">
             Our Values
@@ -156,23 +156,23 @@ function AboutusOurManagement() {
           <img
             src={aboutimg}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded"
+            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
         </div>
       </div>
-      <div className="w-10/12  py-4  grid grid-cols-3 gap-4">
+      <div className="w-10/12  py-4  grid grid-cols-3 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
             src={aboutimg1}
             alt="about"
-            className="w-[90%]  object-cover rounded"
+            className="w-[90%]  object-cover rounded mobile:w-[100%]"
           />
         </div>
         <div className="col-span-2 flex flex-col items-start justify-start gap-2">
           <h2 className="text-seconderyHeading font-bold text-navy-blue">
             Why Choose Us
           </h2>
-          <div className="w-full grid grid-cols-2 gap-4">
+          <div className="w-full grid grid-cols-2 gap-4 mobile:grid-cols-1">
             <span className="flex items-start justify-start flex-col gap-1">
               <img src={Icon} alt="Icon" />
               <h6 className="text-normalHeading font-semibold  text-secondry-green">

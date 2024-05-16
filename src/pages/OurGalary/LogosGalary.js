@@ -13,7 +13,7 @@ function LogosGalary() {
       <div class="w-11/12">
         <h2 className="text-mainHeading font-bold text-navy-blue">LOGOS</h2>
       </div>
-      <div class="w-11/12 grid grid-cols-3 md:grid-cols-4 gap-4">
+      <div class="w-11/12 grid grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
         <div class="grid gap-2">
           <div>
             <img class="h-auto max-w-full rounded-lg" src={img} alt="" />

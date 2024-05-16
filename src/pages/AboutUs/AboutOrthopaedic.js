@@ -2,12 +2,12 @@ import React from "react";
 import aboutimg from "../../assests/images/Rectangle 284.png";
 function AboutOrthopaedic() {
   return (
-    <div className="pagecss gap-[2rem]">
+    <div className="pagecss gap-[2rem] mobile:gap-[1rem]">
       <div className="w-10/12  pt-[2rem] flex flex-col">
-        <h2 className="text-mainHeading font-bold text-navy-blue">
+        <h2 className="text-mainHeading font-bold text-navy-blue mobile:text-normalHeading">
           Orthopaedic-Centre-of-Excellence
         </h2>
-        <div className="w-full py-4  grid grid-cols-2 gap-4 rounded-md">
+        <div className="w-full py-4  grid grid-cols-2 gap-4 rounded-md mobile:flex mobile:flex-col-reverse">
           <div className="flex items-start justify-center flex-col gap-2">
             <p className="para text-gray">
               We offer cutting-edge healthcare services that are unmatched,
@@ -45,12 +45,12 @@ function AboutOrthopaedic() {
             <img
               src={aboutimg}
               alt="about"
-              className="h-[25rem] w-[80%] object-cover rounded"
+              className="h-[25rem] w-[80%] object-cover rounded mobile:w-[100%]"
             />
           </div>
         </div>
       </div>
-      <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-2 gap-4 rounded-md">
+      <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-2 gap-4 rounded-md mobile:grid-cols-1 mobile:pt-[1rem]">
         <div className="flexcenter">
           <img
             src={aboutimg}

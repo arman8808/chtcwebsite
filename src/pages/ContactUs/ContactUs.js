@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <div className="pagecss gap-[2rem]">
       <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-3 gap-4 rounded-md">
-        <div className="col-span-2">
+        <div className="col-span-3">
           <h2 className="text-mainHeading font-bold text-navy-blue">
             We are here to help
           </h2>
@@ -13,11 +13,15 @@ function ContactUs() {
             Do you have any query ?Please feel free to contact us.
           </p>
         </div>
-        <div className="flexcenter">
-          <img src={logo} alt="logo" className="h-[8rem] object-contain" />
+        <div className="flexcenter mobile:hidden">
+          <img
+            src={logo}
+            alt="logo"
+            className="h-[8rem] object-contain mobile:hidden"
+          />
         </div>
       </div>
-      <div className="w-7/12">
+      <div className="w-7/12 mobile:w-full mobile:px-4">
         <from className="flex justify-start items-start flex-col gap-2 w-full">
           <div className="grid grid-cols-2 gap-4  w-full">
             <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -84,7 +88,7 @@ function ContactUs() {
             Find Us Here
           </h2>
         </div>
-        <div className="w-full grid grid-cols-3 gap-4">
+        <div className="w-full grid grid-cols-3 gap-4 mobile:grid-cols-1">
           <div className="card_background rounded-md p-4 flex items-start justify gap-4">
             <Phone style={{ fontSize: "2.5rem" }} className="text-white" />
             <span>
