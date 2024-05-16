@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../../../assests/images/logo-01-01 1.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./MainNav.css";
@@ -44,6 +44,19 @@ function MainNav() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const history = useNavigate();
+  const comRef = useRef();
+  useEffect(() => {
+    let handler = (e) => {
+      if (!comRef.current.contains(e.target)) {
+        document.getElementById("menu__toggle").checked = false;
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
   return (
     <div
       className={
@@ -126,7 +139,7 @@ function MainNav() {
             <span></span>
           </label>
 
-          <ul className="menu__box">
+          <ul className="menu__box" ref={comRef}>
             <li>
               <NavLink
                 to="/"
@@ -134,8 +147,11 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
-                Home{" "}
+                Home
               </NavLink>
             </li>
             <li>
@@ -144,6 +160,9 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 AboutUs{" "}
@@ -156,6 +175,9 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 About Facility{" "}
               </NavLink>
@@ -167,6 +189,9 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 Aboutus OurManagement
               </NavLink>
@@ -177,6 +202,9 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 About Orthopaedic
@@ -190,6 +218,9 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 Departments
               </NavLink>
@@ -200,6 +231,9 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 Our Doctors{" "}
@@ -212,6 +246,9 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 Success Stories
               </NavLink>
@@ -222,6 +259,9 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 Our Galary
@@ -234,6 +274,9 @@ function MainNav() {
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
               >
                 Logos Galary
               </NavLink>
@@ -244,6 +287,9 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 Contact us{" "}
