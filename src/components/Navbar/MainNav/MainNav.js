@@ -65,18 +65,18 @@ function MainNav() {
           : "w-full flex items-center justify-center bg-primary-green mainnav z_index"
       }
     >
-      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow ">
+      <div className="py-4 px-4  w-11/12  flex justify-between items-center  bg-[white] rounded-md shadow lg:w-[95%] md:w-[99%]">
         <img
           src={logo}
           alt="logo"
-          className="w-[10rem] h-[4rem] object-contain text-[18px]"
+          className="w-[10rem] h-[4rem] object-contain text-[18px] md:w-[8rem] h-[3.5rem]"
           onClick={() => history("/")}
         />
-        <ul className=" flex items-center gap-4 mobile:hidden">
+        <ul className=" flex items-center gap-4 mobile:hidden tablet:hidden">
           <li>
             <NavLink
               to="/"
-              className="text-[18px] font-medium"
+              className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
             >
               Home{" "}
@@ -84,7 +84,7 @@ function MainNav() {
           </li>
           <li>
             <p
-              className="text-[18px] text-[#3D3D3D] font-medium cursor-pointer"
+              className="text-[18px] text-[#3D3D3D] font-medium cursor-pointer md:text-[1rem]"
               onClick={handleOpen}
             >
               About
@@ -93,7 +93,7 @@ function MainNav() {
           <li>
             <NavLink
               to="/deparments"
-              className="text-[18px] font-medium"
+              className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
             >
               Departments
@@ -102,7 +102,7 @@ function MainNav() {
           <li>
             <NavLink
               to="/ourdoctors"
-              className="text-[18px] font-medium"
+              className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
             >
               Our Doctors{" "}
@@ -111,32 +111,36 @@ function MainNav() {
           <li>
             <NavLink
               to="/successstories"
-              className="text-[18px] font-medium"
+              className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
             >
               Success Stories
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/contactus"
-              className="text-[18px] font-medium"
+              className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
             >
               Contact us{" "}
             </NavLink>
-          </li>
+          </li> */}
         </ul>
         <button
           onClick={() => history("/contactus")}
-          className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md mobile:hidden"
+          className="bg-secondry-green hover:scale-105 text-white py-1 px-2  text-[1.1rem] rounded-md mobile:hidden tablet:hidden md:text-[1rem]"
         >
           Get Started <ArrowForwardIcon />
         </button>
-        <div className="hamburger-menu hidden mobile:flex">
+        <div className="hamburger-menu hidden mobile:flex tablet:flex">
           <input id="menu__toggle" type="checkbox" />
           <label className="menu__btn" for="menu__toggle">
-            <span></span>
+            <span
+              onClick={() =>
+                (document.getElementById("menu__toggle").checked = false)
+              }
+            ></span>
           </label>
 
           <ul className="menu__box" ref={comRef}>
@@ -146,9 +150,6 @@ function MainNav() {
                 className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
-                }
-                onClick={() =>
-                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 Home

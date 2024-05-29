@@ -70,7 +70,7 @@ body {
 .css-1wnsr1i,
 .css-111ci61,
 .css-qrdfw9 {
-  top: 15% !important;
+  top: 22% !important;
   left: 25% !important;
 }
 .shadow {
@@ -191,5 +191,13 @@ body {
   .scroll_x {
     overflow: hidden;
     overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 767px) {
+  .css-1wnsr1i,
+  .css-111ci61,
+  .css-qrdfw9 {
+    top: 15% !important;
+    left: 10% !important;
   }
 }

@@ -3,8 +3,8 @@ import React from "react";
 
 function SubNav() {
   return (
-    <div className="w-full   flex justify-center items-center bg-primary-green mobile:hidden">
-      <div className="w-9/12 py-2 px-4 bg-light-green flex justify-between items-center rounded-md">
+    <div className="w-full   flex justify-center items-center bg-primary-green mobile:hidden tablet:hidden">
+      <div className="w-9/12 py-2 px-4 bg-light-green flex justify-between items-center rounded-md md:w-11/12">
         <span className="flex justify-center items-center gap-1 text-white">
           <LocationOn style={{ fontSize: "1.3rem" }} />
           <p className="text-[14px]">

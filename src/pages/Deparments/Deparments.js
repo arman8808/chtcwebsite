@@ -26,7 +26,7 @@ function Deparments() {
           </ul>
         </div>
       </div>
-      <div className="w-9/12 py-4  grid grid-cols-3 gap-4 rounded-md scroll_x mobile:flex">
+      <div className="w-9/12 py-4  grid grid-cols-3 gap-4 rounded-md scroll_x mobile:flex lg:w-10/12 md:w-11/12 md:gap-[4rem]">
         <DoctorCard />
         <DoctorCard />
         <DoctorCard />

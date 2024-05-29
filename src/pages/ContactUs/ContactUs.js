@@ -82,7 +82,7 @@ function ContactUs() {
           </button>
         </from>
       </div>
-      <div className="w-10/12 py-4   gap-4 rounded-md">
+      <div className="w-10/12 py-4   gap-4 rounded-md md:w-11/12">
         <div className="">
           <h2 className="text-mainHeading font-bold text-navy-blue">
             Find Us Here
@@ -121,7 +121,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="w-10/12 py-4  rounded-md">
+      <div className="w-10/12 py-4  rounded-md md:w-11/12">
         <iframe
           title="address"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.398695973883!2d80.90140517494407!3d26.815592064258453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc246b9391af%3A0x1d05f225347c18e2!2sCity%20Hospital%20and%20Trauma%20Centre%20-%20Best%20Hospital%20for%20Orthopaedics%20%7C%7C%20Gynaecology%20in%20Alambagh%20Lucknow%20%7C%7C!5e1!3m2!1sen!2sin!4v1715530377284!5m2!1sen!2sin"
