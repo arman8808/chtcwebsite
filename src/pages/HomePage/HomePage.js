@@ -3,6 +3,7 @@ import herosectionImage from "../../assests/images/Group.png";
 import herosectionImage1 from "../../assests/images/Element 2.png";
 import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
+import freecodecamp from "../../assests/images/Untitled-1.webp";
 import doctor from "../../assests/images/Image (1).png";
 import doctor1 from "../../assests/images/Image (2).png";
 // import image from "../../assests/images/Group 120.png";
@@ -157,8 +158,36 @@ function HomePage() {
           updated on essential information for maintaining your well-being.
         </p>
         <div className="grid grid-cols-2 gap-4 mobile:grid-cols-1">
-          <NewsUpdateCard />
-          <NewsUpdateCard />
+          <NewsUpdateCard
+            image={freecodecamp}
+            title={"Free Health Camp!"}
+            para1={
+              "Join us for a comprehensive health camp with 30+ doctors from various specialties including Orthopaedics, Gynaecology, General Medicine, General Surgery, Cardiology, and more. Avail free lab tests like Blood Sugar, Uric Acid, Haemoglobin, Neuropathy Test, Thyroid, BMD, LFT, and receive 3 days of free medicines. Additionally, book surgeries and tests at 50% discount!"
+            }
+            para2={"Date: 9th June 2024 (Sunday)"}
+            para3={"Time: 9 AM to 3 PM"}
+            para4={
+              "Don't miss this opportunity for your health and well-being. Visit us for expert consultations and significant savings on essential medical services."
+            }
+          />
+          <NewsUpdateCard
+            para1={
+              "We are excited to announce openings for qualified and compassionate professionals to join our esteemed hospital. We are looking for dedicated individuals who are committed to providing the highest standard of care to our patients."
+            }
+            para2={"Open Positions:"}
+            para3={"1. Nurses Qualifications: GNM/B.Sc. Nursing"}
+            para4={"2. EMO/RMO Qualifications: MBBS Doctors"}
+            para5={
+              "3. ICU Technicians Qualifications: Relevant Experience and Certifications"
+            }
+            para6={"How to Apply:"}
+            para7={
+              "Interested candidates are invited to send their resume and cover letter at (city.lko@gmail.com) or apply directly through our website."
+            }
+            para8={
+              "Together, let's make a difference in healthcare. Join us in our mission to provide exceptional care to our community."
+            }
+          />
         </div>
       </div>
       <div

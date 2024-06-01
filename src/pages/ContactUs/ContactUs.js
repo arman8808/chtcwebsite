@@ -5,8 +5,8 @@ function ContactUs() {
   return (
     <div className="pagecss gap-[2rem]">
       <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-3 gap-4 rounded-md">
-        <div className="col-span-3">
-          <h2 className="text-mainHeading font-bold text-navy-blue">
+        <div className="col-span-2 mobile:col-span-3">
+          <h2 className="text-mainHeading font-bold text-navy-blue mobile:text-seconderyHeading">
             We are here to help
           </h2>
           <p className="para text-gray">

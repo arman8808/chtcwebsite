@@ -1,7 +1,33 @@
 import React from "react";
-import DoctorCard from "../../components/DoctorCard/DoctorCard";
+import DeparmentCard from "../../components/DeparmentCard/DeparmentCard";
 
 function Deparments() {
+  const data = [
+    {
+      title: "Orthopaodics",
+    },
+    {
+      title: "Obstetrics and Gynecology",
+    },
+    {
+      title: "General Medicine",
+    },
+    {
+      title: "General Surgery",
+    },
+    {
+      title: "Paediatrics",
+    },
+    {
+      title: "Critical Case and Icu",
+    },
+    {
+      title: "Cardiology",
+    },
+    {
+      title: "Ophthalmology (Eye)",
+    },
+  ];
   return (
     <div className="pagecss gap-[3rem]">
       <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-1 gap-4 rounded-md">
@@ -27,14 +53,9 @@ function Deparments() {
         </div>
       </div>
       <div className="w-9/12 py-4  grid grid-cols-3 gap-4 rounded-md scroll_x mobile:flex lg:w-10/12 md:w-11/12 md:gap-[4rem]">
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
+        {data?.map((item) => (
+          <DeparmentCard name={item?.title} />
+        ))}
       </div>
     </div>
   );

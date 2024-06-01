@@ -78,6 +78,7 @@ function MainNav() {
               to="/"
               className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
+              onClick={handleClose}
             >
               Home{" "}
             </NavLink>
@@ -95,6 +96,7 @@ function MainNav() {
               to="/deparments"
               className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
+              onClick={handleClose}
             >
               Departments
             </NavLink>
@@ -104,6 +106,7 @@ function MainNav() {
               to="/ourdoctors"
               className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
+              onClick={handleClose}
             >
               Our Doctors{" "}
             </NavLink>
@@ -113,6 +116,7 @@ function MainNav() {
               to="/successstories"
               className="text-[18px] font-medium md:text-[1rem]"
               style={({ isActive }) => (isActive ? activeStyle : unActiveStyle)}
+              onClick={handleClose}
             >
               Success Stories
             </NavLink>
@@ -194,7 +198,7 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                Aboutus OurManagement
+                About OurManagement
               </NavLink>
             </li>
             <li>
@@ -344,7 +348,7 @@ function MainNav() {
                 }
                 onClick={handleClose}
               >
-                Aboutus Our Management
+                About Our Management
               </NavLink>{" "}
               <NavLink
                 to="/aboutorthopaedic"

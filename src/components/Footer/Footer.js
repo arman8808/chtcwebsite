@@ -9,8 +9,10 @@ import {
   Phone,
   Twitter,
 } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const history = useNavigate();
   return (
     <div className="w-full relative flex items-center justify-start flex-col mt-[5rem]">
       <img
@@ -56,13 +58,30 @@ function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <span>
-              <p className="text-[1rem] font-normal cursor-pointer">About Us</p>
-              <p className="text-[1rem] font-normal cursor-pointer">
+              <p
+                onClick={() => history("/aboutus")}
+                className="text-[1rem] font-normal cursor-pointer"
+              >
+                About Us
+              </p>
+              <p
+                onClick={() => history("/deparments")}
+                className="text-[1rem] font-normal cursor-pointer"
+              >
                 Departments
               </p>
-              <p className="text-[1rem] font-normal cursor-pointer">Doctors</p>
-              <p className="text-[1rem] font-normal cursor-pointer">
-                Appointment
+              <p
+                onClick={() => history("/ourdoctors")}
+                className="text-[1rem] font-normal cursor-pointer"
+              >
+                Doctors
+              </p>
+
+              <p
+                onClick={() => history("/ourgalary")}
+                className="text-[1rem] font-normal cursor-pointer"
+              >
+                Our Galary
               </p>
             </span>
             <span>
