@@ -4,10 +4,10 @@ import DeparmentCard from "../../components/DeparmentCard/DeparmentCard";
 function Deparments() {
   const data = [
     {
-      title: "Orthopaodics",
+      title: "Orthopaedics",
     },
     {
-      title: "Obstetrics and Gynecology",
+      title: "Obstetrics & Gynaecology",
     },
     {
       title: "General Medicine",
@@ -19,13 +19,16 @@ function Deparments() {
       title: "Paediatrics",
     },
     {
-      title: "Critical Case and Icu",
+      title: "Critical Care & ICU",
     },
     {
       title: "Cardiology",
     },
     {
-      title: "Ophthalmology (Eye)",
+      title: "Ophthalmology (Eyes)",
+    },
+    {
+      title: "ENT (Ear, Nose & Throat)",
     },
   ];
   return (

@@ -9,7 +9,7 @@ function DeparmentCard({ profile, name, desigitation }) {
         className="h-[20rem] w-full object-contain rounded-md"
       />
       <span className="flexcenter flex-col">
-        <h6 className="text-normalHeading font-normal text-black-shade">
+        <h6 className="text-normalHeading font-normal text-black-shade text-center">
           {name ? name : " Vanseena Adams"}
         </h6>
       </span>
