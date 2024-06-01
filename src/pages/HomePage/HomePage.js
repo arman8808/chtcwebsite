@@ -4,6 +4,7 @@ import herosectionImage1 from "../../assests/images/Element 2.png";
 import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
 import freecodecamp from "../../assests/images/Untitled-1.webp";
+import wearehiring from "../../assests/images/chtc hiring.png";
 import doctor from "../../assests/images/Image (1).png";
 import doctor1 from "../../assests/images/Image (2).png";
 // import image from "../../assests/images/Group 120.png";
@@ -171,6 +172,7 @@ function HomePage() {
             }
           />
           <NewsUpdateCard
+            image={wearehiring}
             para1={
               "We are excited to announce openings for qualified and compassionate professionals to join our esteemed hospital. We are looking for dedicated individuals who are committed to providing the highest standard of care to our patients."
             }

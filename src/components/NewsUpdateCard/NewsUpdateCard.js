@@ -16,7 +16,7 @@ function NewsUpdateCard({
     <div className="bg-white rounded-md p-4 box_shadow flex flex-col items-start justify-start gap-3">
       <img src={image ? image : img} alt="" className="object-contain" />
       <p className="text-normalHeading font-semibold text-black-shade">
-        {title ? title : " Innovating for Tomorrow: Our Company's Journey"}
+        {title && title}
       </p>
       <p className="para text-gray">
         {para1
