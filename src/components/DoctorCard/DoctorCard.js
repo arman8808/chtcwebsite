@@ -1,13 +1,13 @@
 import React from "react";
 import img from "../../assests/images/photo.png";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-function DoctorCard({ profile, name, desigitation }) {
+function DoctorCard({ profile, name, desigitation, img }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2  bg-light-gray p-4 w-[80%] rounded w-full mobile:min-w-[20rem] md:min-w-[17rem]">
+    <div className="flex flex-col items-center justify-start gap-2  bg-light-gray p-4 w-[80%] rounded w-full mobile:min-w-[20rem] md:min-w-[17rem]">
       <img
         src={profile ? profile : img}
         alt="doctor"
-        className="h-[20rem] w-full object-contain rounded-md"
+        className="h-[20rem] w-full object-contain rounded-md h-[20rem]"
       />
       <span className="flexcenter flex-col">
         {" "}

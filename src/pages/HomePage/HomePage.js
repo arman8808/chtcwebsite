@@ -5,8 +5,7 @@ import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
 import freecodecamp from "../../assests/images/Untitled-1.webp";
 import wearehiring from "../../assests/images/chtc hiring.png";
-import doctor from "../../assests/images/Image (1).png";
-import doctor1 from "../../assests/images/Image (2).png";
+
 // import image from "../../assests/images/Group 120.png";
 import contacusimage from "../../assests/images/Rectangle 111.png";
 import bg from "../../assests/images/Group 103.png";
@@ -31,6 +30,9 @@ import { MdOutlineGirl } from "react-icons/md";
 import { GiBrain, GiKidneys, GiPsychicWaves } from "react-icons/gi";
 import { FaHeartPulse } from "react-icons/fa6";
 import CountUp from "react-countup";
+import RohilMehta from "../../assests/images/1.png";
+import RajeshMehta from "../../assests/images/2.png";
+import JyotsnaMehta from "../../assests/images/3.png";
 function HomePage() {
   const history = useNavigate();
   return (
@@ -350,22 +352,23 @@ function HomePage() {
         </p>
         <div className="w-11/12 grid grid-cols-3 gap-2 mobile:overscroll-none mobile:flex scroll_x md:overflow-x-scroll md:gap-[13rem]">
           <DoctorCard
+            profile={RajeshMehta}
             name={"Dr. Rajesh Mehta"}
             desigitation={"M.B.B.S. M.S. ( Orthopaedics ) Director: CHTC "}
           />
           <DoctorCard
+            profile={RohilMehta}
             name={"Dr. Rohil Mehta"}
             desigitation={
               "MBBS, M.S. ( Orthopaedics ), D.N.B. ( Orthopaedics )"
             }
-            profile={doctor}
           />
           <DoctorCard
+            profile={JyotsnaMehta}
             name={"Dr. Jyotsna Mehta"}
             desigitation={
               "M.B.B.S. , D.G.O. Senior Gynaecologist & Director: CHTC"
             }
-            profile={doctor1}
           />
         </div>
       </div>
@@ -387,7 +390,7 @@ function HomePage() {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -395,7 +398,7 @@ function HomePage() {
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>
             </div>
@@ -405,7 +408,7 @@ function HomePage() {
                 <input
                   type="text"
                   placeholder="Reason for Visit"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -413,7 +416,7 @@ function HomePage() {
                 <input
                   type="text"
                   placeholder="Department"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>
             </div>
@@ -423,7 +426,7 @@ function HomePage() {
                 <input
                   type="date"
                   placeholder="Preferred Date"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -431,7 +434,7 @@ function HomePage() {
                 <input
                   type="time"
                   placeholder="Preferred Time"
-                  className="border border-gray pl-[5px] outline-none h-[2.5rem] rounded-md w-full"
+                  className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
                 />
               </span>
             </div>

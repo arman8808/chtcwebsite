@@ -1,7 +1,9 @@
 import React from "react";
 import DoctorCard from "../../components/DoctorCard/DoctorCard";
 import OurGoalsBanner from "../../utils/OurGoalsBanner";
-
+import RohilMehta from "../../assests/images/1.png";
+import RajeshMehta from "../../assests/images/2.png";
+import JyotsnaMehta from "../../assests/images/3.png";
 function OurDoctors() {
   return (
     <div className="pagecss gap-[2rem]">
@@ -13,14 +15,23 @@ function OurDoctors() {
         </div>
       </div>
       <div className="w-10/12 grid grid-cols-3 gap-4 mobile:flex scroll_x md:w-11/12">
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
-        <DoctorCard />
+        <DoctorCard
+          profile={RajeshMehta}
+          name={"Dr. Rajesh Mehta"}
+          desigitation={"M.B.B.S. M.S. ( Orthopaedics ) Director: CHTC "}
+        />
+        <DoctorCard
+          profile={RohilMehta}
+          name={"Dr. Rohil Mehta"}
+          desigitation={"MBBS, M.S. ( Orthopaedics ), D.N.B. ( Orthopaedics )"}
+        />
+        <DoctorCard
+          profile={JyotsnaMehta}
+          name={"Dr. Jyotsna Mehta"}
+          desigitation={
+            "M.B.B.S. , D.G.O. Senior Gynaecologist & Director: CHTC"
+          }
+        />
       </div>
       <div className=" w-10/12 py-4">
         <OurGoalsBanner />

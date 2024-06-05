@@ -1,34 +1,52 @@
 import React from "react";
 import DeparmentCard from "../../components/DeparmentCard/DeparmentCard";
+import OrthopaedicsImage from "../../assests/images/icons/1-01.jpg";
+import ObstetricsGynaecology from "../../assests/images/icons/1-02.jpg";
+import GeneralMedicine from "../../assests/images/icons/1-03.jpg";
+import GeneralSurgery from "../../assests/images/icons/1-04.jpg";
+import Paediatrics from "../../assests/images/icons/1-05.jpg";
+import CriticalCareICU from "../../assests/images/icons/1-06.jpg";
+import Cardiology from "../../assests/images/icons/1-07.jpg";
+import OphthalmologyImage from "../../assests/images/icons/1-08.jpg";
+import ENT from "../../assests/images/icons/1-09.jpg";
 
 function Deparments() {
   const data = [
     {
       title: "Orthopaedics",
+      image: OrthopaedicsImage,
     },
     {
       title: "Obstetrics & Gynaecology",
+      image: ObstetricsGynaecology,
     },
     {
       title: "General Medicine",
+      image: GeneralMedicine,
     },
     {
       title: "General Surgery",
+      image: GeneralSurgery,
     },
     {
       title: "Paediatrics",
+      image: Paediatrics,
     },
     {
       title: "Critical Care & ICU",
+      image: CriticalCareICU,
     },
     {
       title: "Cardiology",
+      image: Cardiology,
     },
     {
       title: "Ophthalmology (Eyes)",
+      image: OphthalmologyImage,
     },
     {
       title: "ENT (Ear, Nose & Throat)",
+      image: ENT,
     },
   ];
   return (
@@ -57,7 +75,7 @@ function Deparments() {
       </div>
       <div className="w-9/12 py-4  grid grid-cols-3 gap-4 rounded-md scroll_x mobile:flex lg:w-10/12 md:w-11/12 md:gap-[4rem]">
         {data?.map((item) => (
-          <DeparmentCard name={item?.title} />
+          <DeparmentCard name={item?.title} profile={item.image} />
         ))}
       </div>
     </div>
