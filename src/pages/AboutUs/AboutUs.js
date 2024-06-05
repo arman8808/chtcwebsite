@@ -1,6 +1,7 @@
 import React from "react";
 import aboutimg from "../../assests/images/Rectangle 277.png";
 import aboutimg1 from "../../assests/images/Rectangle 284.png";
+import RajeshMehta from "../../assests/images/2.png";
 function AboutUs() {
   return (
     <div className="pagecss gap-[3rem]">
@@ -59,7 +60,7 @@ function AboutUs() {
       <div className="w-10/12 py-4  grid grid-cols-2 gap-4 rounded-md mobile:grid-cols-1">
         <div className="flex items-center flex-col gap-1 mbolie:gap-2">
           <img
-            src={aboutimg}
+            src={RajeshMehta}
             alt="about"
             className="h-[25rem] w-[80%] object-cover rounded mobile:h-[15rem] mobile:w-[100%]"
           />

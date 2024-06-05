@@ -5,6 +5,8 @@ import Icon from "../../assests/images/icons/Icon.png";
 import Icon2 from "../../assests/images/icons/Icon (2).png";
 import Icon4 from "../../assests/images/icons/Icon0.png";
 import Icon3 from "../../assests/images/icons/Icon4.png";
+import RajeshMehta from "../../assests/images/2.png";
+import JyotsnaMehta from "../../assests/images/3.png";
 function AboutusOurManagement() {
   return (
     <div className="pagecss gap-[3rem]">
@@ -44,18 +46,18 @@ function AboutusOurManagement() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg}
+            src={RajeshMehta}
             alt="about"
-            className="h-[25rem] w-[80%] object-cover rounded mobile:w-[100%]"
+            className="h-[25rem] w-[80%] object-contain rounded mobile:w-[100%]"
           />
         </div>
       </div>
       <div className="w-10/12 py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
-            src={aboutimg}
+            src={JyotsnaMehta}
             alt="about"
-            className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
+            className="h-[22rem] w-[80%] object-contain rounded mobile:w-[100%]"
           />
         </div>
         <div className="flex flex-col items-start justify-start gap-2">
