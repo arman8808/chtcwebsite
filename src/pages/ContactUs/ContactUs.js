@@ -29,7 +29,7 @@ function ContactUs() {
               <input
                 type="text"
                 placeholder="Name"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -37,7 +37,7 @@ function ContactUs() {
               <input
                 type="text"
                 placeholder="Phone Number"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>
           </div>
@@ -47,7 +47,7 @@ function ContactUs() {
               <input
                 type="text"
                 placeholder="Reason for Visit"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -55,7 +55,7 @@ function ContactUs() {
               <input
                 type="text"
                 placeholder="Department"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>
           </div>
@@ -65,7 +65,7 @@ function ContactUs() {
               <input
                 type="date"
                 placeholder="Preferred Date"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
@@ -73,7 +73,7 @@ function ContactUs() {
               <input
                 type="time"
                 placeholder="Preferred Time"
-                className="border border-gray pl-[5px] outline-none h-[2.2rem] rounded-md w-full"
+                className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
               />
             </span>
           </div>
