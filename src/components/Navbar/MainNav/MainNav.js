@@ -5,6 +5,8 @@ import "./MainNav.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal } from "@mui/material";
 import { Slide } from "@mui/material";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 function MainNav() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -83,13 +85,14 @@ function MainNav() {
               Home{" "}
             </NavLink>
           </li>
-          <li>
+          <li className="flex items-center justify-center gap-1">
             <p
-              className="text-[18px] text-[#3D3D3D] font-medium cursor-pointer md:text-[1rem]"
+              className="text-[18px] text-[#3D3D3D] font-medium cursor-pointer md:text-[1rem] "
               onClick={handleOpen}
             >
               About
             </p>
+            <IoIosArrowDown />
           </li>
           <li>
             <NavLink
@@ -322,7 +325,7 @@ function MainNav() {
             <div className="grid grid-cols-2 gap-4">
               <NavLink
                 to="/aboutus"
-                className="text-[18px] font-medium"
+                className="text-[18px] font-medium w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -332,7 +335,7 @@ function MainNav() {
               </NavLink>{" "}
               <NavLink
                 to="/aboutfacility"
-                className="text-[18px] font-medium"
+                className="text-[18px] font-medium w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -342,7 +345,7 @@ function MainNav() {
               </NavLink>{" "}
               <NavLink
                 to="/aboutusourmanagement"
-                className="text-[18px] font-medium"
+                className="text-[18px] font-medium w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -352,7 +355,7 @@ function MainNav() {
               </NavLink>{" "}
               <NavLink
                 to="/aboutorthopaedic"
-                className="text-[18px] font-medium"
+                className="text-[18px] font-medium w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }

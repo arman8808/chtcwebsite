@@ -27,14 +27,30 @@ import NewsUpdateCard from "../../components/NewsUpdateCard/NewsUpdateCard";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { MdOutlineGirl } from "react-icons/md";
-import { GiBrain, GiKidneys, GiPsychicWaves } from "react-icons/gi";
+import {
+  GiBrain,
+  GiKidneys,
+  GiKneeBandage,
+  GiPsychicWaves,
+} from "react-icons/gi";
 import { FaHeartPulse } from "react-icons/fa6";
 import CountUp from "react-countup";
 import RohilMehta from "../../assests/images/1.png";
 import RajeshMehta from "../../assests/images/2.png";
 import JyotsnaMehta from "../../assests/images/3.png";
+import { LiaUserNurseSolid } from "react-icons/lia";
+import { useForm } from "react-hook-form";
 function HomePage() {
   const history = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
   return (
     <div className="w-full flex flex-col items-center justify-center gap-[3rem] mobile:[2rem]">
       <div
@@ -69,7 +85,7 @@ function HomePage() {
             />
           </div>
         </div>
-        <div className="flex items-center justify-center ">
+        {/* <div className="flex items-center justify-center ">
           <div className="bg-white w-fit rounded-3xl py-3 px-3 flex items-center justify-center gap-2">
             <AccessTimeIcon
               className="text-secondry-green"
@@ -80,35 +96,36 @@ function HomePage() {
               <p className="text-[12px]">Mon - Sat: 9.00 AM-07.00 PM</p>
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md mobile:grid-cols-2 tablet:grid-cols-2 text-center">
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
             <CountUp
               start={0}
-              end={4357}
+              end={8000}
               duration={5}
               scrollSpyDelay={500}
             ></CountUp>
+            +
           </p>
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={2967} duration={5}></CountUp>
+            <CountUp start={0} end={5000} duration={5}></CountUp>+
           </p>
           <p className="font-medium text-semibold">HIP REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={2237} duration={5}></CountUp>
+            <CountUp start={0} end={4000} duration={5}></CountUp>+
           </p>
           <p className="font-medium text-semibold">ARTHROSCOPY SURGERIES</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
           <p className="text-mainHeading font-bold text-white">
-            <CountUp start={0} end={22} duration={10}></CountUp>+
+            <CountUp start={0} end={25} duration={10}></CountUp>+
           </p>
           <p className="font-medium text-semibold">Years Of Service</p>
         </span>{" "}
@@ -204,8 +221,8 @@ function HomePage() {
         <div className="w-11/12 absolute bottom-[1rem] flex gap-4 mobile:grid mobile:grid-cols-2 md:overflow-x-scroll tablet:overflow-x-scroll ">
           <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             {/* <img src={bell} alt="" /> */}
-            <HiOutlineBellAlert className="text-[3rem]" />
-            <p>Emergency Department</p>
+            <GiKneeBandage className="text-[3rem]" />
+            <p>Orthopaedic Department</p>
           </span>{" "}
           <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
             <MdOutlineGirl className="text-[3rem]" />
@@ -220,13 +237,14 @@ function HomePage() {
             <p>Cardiology Department</p>
           </span>{" "}
           <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
-            <GiBrain className="text-[3rem]" />
-            <p>Neurology Department</p>
+            <LiaUserNurseSolid className="text-[3rem]" />
+            <p>Critical Care Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
-            <GiPsychicWaves className="text-[3rem]" />
-            <p>Psychiatry Department</p>
-          </span>
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+            {/* <img src={bell} alt="" /> */}
+            <HiOutlineBellAlert className="text-[3rem]" />
+            <p>Emergency Department</p>
+          </span>{" "}
         </div>
       </div>
       <div className="w-11/12 h-fit py-4 lg:py-[3.2rem] md:py-[6rem]  px-4 green_gredient relative flex items-center justify-center rounded-md">
@@ -362,6 +380,9 @@ function HomePage() {
             desigitation={
               "MBBS, M.S. ( Orthopaedics ), D.N.B. ( Orthopaedics )"
             }
+            insta={"https://www.instagram.com/dr.rohilmehta/"}
+            facebook={"https://www.facebook.com/rohil.mehta.9"}
+            linkdin={"https://www.linkedin.com/in/rohil-mehta-643a6b238/"}
           />
           <DoctorCard
             profile={JyotsnaMehta}
@@ -383,7 +404,10 @@ function HomePage() {
             </h6>
           </span>
 
-          <from className="flex justify-start items-start flex-col gap-2 w-full">
+          <form
+            className="flex justify-start items-start flex-col gap-2 w-full"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <div className="grid grid-cols-2 gap-4  w-full">
               <span className="flex flex-col items-start justify-start w-full gap-2">
                 <p>Name</p>
@@ -391,15 +415,36 @@ function HomePage() {
                   type="text"
                   placeholder="Name"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("name", {
+                    required: true,
+                    maxLength: 20,
+                    validate: (value) => {
+                      return !!value.trim();
+                    },
+                  })}
                 />
+                {errors.name && (
+                  <p className="loginFormError">Please Enter Valid Name</p>
+                )}
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
                 <p>Phone Number</p>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Phone Number"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("phone", {
+                    required: true,
+                    pattern: /^[0-9+-]+$/,
+                    minLength: 10,
+                    maxLength: 10,
+                  })}
                 />
+                {errors.phone && (
+                  <p className="loginFormError">
+                    Please Enter Valid Phone Number
+                  </p>
+                )}
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4 w-full">
@@ -409,7 +454,19 @@ function HomePage() {
                   type="text"
                   placeholder="Reason for Visit"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("reasonforVisit", {
+                    required: true,
+                    maxLength: 100,
+                    validate: (value) => {
+                      return !!value.trim();
+                    },
+                  })}
                 />
+                {errors.reasonforVisit && (
+                  <p className="loginFormError">
+                    Please Enter Reason for Visit
+                  </p>
+                )}
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
                 <p>Department</p>
@@ -417,7 +474,17 @@ function HomePage() {
                   type="text"
                   placeholder="Department"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("Department", {
+                    required: true,
+                    maxLength: 100,
+                    validate: (value) => {
+                      return !!value.trim();
+                    },
+                  })}
                 />
+                {errors.Department && (
+                  <p className="loginFormError">Please Enter Department</p>
+                )}
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4 w-full">
@@ -427,7 +494,13 @@ function HomePage() {
                   type="date"
                   placeholder="Preferred Date"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("preferredDate", {
+                    required: true,
+                  })}
                 />
+                {errors.preferredDate && (
+                  <p className="loginFormError">Please Enter Preferred Date</p>
+                )}
               </span>{" "}
               <span className="flex flex-col items-start justify-start w-full gap-2">
                 <p>Preferred Time</p>
@@ -435,13 +508,22 @@ function HomePage() {
                   type="time"
                   placeholder="Preferred Time"
                   className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                  {...register("preferredTime", {
+                    required: true,
+                  })}
                 />
+                {errors.preferredTime && (
+                  <p className="loginFormError">Please Enter Preferred Time</p>
+                )}
               </span>
             </div>
-            <button className="button text-white rounded-md green_background_linear">
+            <button
+              type="submit"
+              className="button text-white rounded-md green_background_linear"
+            >
               Submit
             </button>
-          </from>
+          </form>
         </div>
         <div className="flex items-center justify-center mobile:hidden">
           <img src={contacusimage} alt="contacusimage" className="h-[30rem]" />

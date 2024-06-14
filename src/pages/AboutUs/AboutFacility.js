@@ -94,10 +94,6 @@ function AboutFacility() {
               - Cutting-edge centralized 24/7 Advanced Pathology & Microbiology
               lab
             </li>
-            <li>
-              - Cutting-edge centralized 24/7 Advanced Pathology & Microbiology
-              lab
-            </li>
             <li>- Staffed by a well-qualified and trained team</li>
             <li>- Less TAT with emailing of reports & SMS facility.</li>
             <li>
@@ -313,10 +309,7 @@ function AboutFacility() {
               - Features well-appointed beds in Suite, semi-private, private,
               general, and intensive care categories
             </li>
-            <li>
-              - Features well-appointed beds in Suite, semi-private, private,
-              general, and intensive care categories
-            </li>
+
             <li>
               - Boasts a skilled team of surgeons proficient in advanced
               procedures like microvascular surgeries, limb salvaging surgeries,

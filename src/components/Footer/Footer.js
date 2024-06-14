@@ -5,11 +5,12 @@ import {
   Email,
   Facebook,
   Instagram,
+  LinkedIn,
   LocationOn,
   Phone,
   Twitter,
 } from "@mui/icons-material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
   const history = useNavigate();
@@ -18,7 +19,7 @@ function Footer() {
       <img
         src={img}
         alt=""
-        className="h-[20rem] absolute top-[-7rem] z-10 mobile:p[-4rem]"
+        className="h-[20rem] absolute top-[-7rem] z-10 mobile:p[-4rem] tablet:h-[15rem]"
       />
       <div className="w-full flex items-center justify-center  relative">
         <img
@@ -26,7 +27,7 @@ function Footer() {
           alt="footerBackground"
           className="w-full h-[25rem]  mobile:h-[46rem]"
         />
-        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[8rem] absolute mobile:grid-cols-1 mobile:pb-[6rem] mobile:pt-[17rem]">
+        <div className="w-11/12 grid grid-cols-3 gap-4 py-4 pt-[8rem] absolute mobile:grid-cols-1 mobile:pb-[6rem] mobile:pt-[17rem] tablet:pt-[8rem] tablet:pb:[10rem]">
           <div className="flex flex-col justify-start items-start gap-2">
             <h6 className="text-para font-semibold text-black-shade">
               City Hospital Trauma Center
@@ -47,13 +48,13 @@ function Footer() {
               <p className="p-1 bg-primary-green rounded-full">
                 <Phone className="text-white" style={{ fontSize: "1.4rem" }} />
               </p>
-              <p className="text-[14px]">+91 9119900861,+91 9119900862</p>
+              <p className="text-[14px]">9119900861, 9119900862</p>
             </span>
             <span className="flex items-start justify-start gap-2">
               <p className="p-1 bg-primary-green rounded-full">
                 <Email className="text-white" style={{ fontSize: "1.4rem" }} />
               </p>
-              <p className="text-[14px]">city.lko@gmail.com</p>
+              <p className="text-[14px]">admin@cityhospitallko.com</p>
             </span>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -86,7 +87,10 @@ function Footer() {
             </span>
             <span>
               <p className="text-[1rem] font-normal cursor-pointer">Blog</p>
-              <p className="text-[1rem] font-normal cursor-pointer">
+              <p
+                className="text-[1rem] font-normal cursor-pointer"
+                onClick={() => history("/contactus")}
+              >
                 Contact Us
               </p>
               <p className="text-[1rem] font-normal cursor-pointer">FAQs</p>
@@ -118,16 +122,38 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-secondry-green w-full py-3 px-[5%] flex items-center justify-between mobile:flex-col mobile:text-center mobile:justify-center mobile:gap-2">
-        <span className="flex justify-start items-center gap-2 text-white">
-          <p>Follow Us</p>
-          <Facebook />
-          <Instagram />
-          <Twitter />
+      <div className="bg-secondry-green w-full gap-4 py-3 px-[5%] flex items-center justify-between mobile:flex-col mobile:text-center mobile:justify-center mobile:gap-2">
+        <span className="flex flex-row justify-start items-center gap-2 text-white tablet:flex-col tablet:items-start gap-3">
+          <Link
+            to="https://branding360.ae/"
+            target="_blank"
+            className="text-start"
+          >
+            Developed by Branding 360
+          </Link>
         </span>
-        <p className="para text-white">
-          Copyright © 2024 Pro Health. All rights reserved.
+        <p className="para text-white text-center">
+          Copyright © 2024. All rights reserved.
         </p>
+        <div
+          className="flex gap-1 text-white
+          "
+        >
+          <p>Follow Us</p>
+          <Link to="https://www.instagram.com/dr.rohilmehta/" target="_blank">
+            <Instagram />
+          </Link>
+          <Link to="https://www.facebook.com/rohil.mehta.9" target="_blank">
+            <Facebook />
+          </Link>
+
+          <Link
+            to="https://www.linkedin.com/in/rohil-mehta-643a6b238/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </Link>
+        </div>
       </div>
     </div>
   );

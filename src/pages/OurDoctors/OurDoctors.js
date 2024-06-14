@@ -24,6 +24,9 @@ function OurDoctors() {
           profile={RohilMehta}
           name={"Dr. Rohil Mehta"}
           desigitation={"MBBS, M.S. ( Orthopaedics ), D.N.B. ( Orthopaedics )"}
+          insta={"https://www.instagram.com/dr.rohilmehta/"}
+          facebook={"https://www.facebook.com/rohil.mehta.9"}
+          linkdin={"https://www.linkedin.com/in/rohil-mehta-643a6b238/"}
         />
         <DoctorCard
           profile={JyotsnaMehta}

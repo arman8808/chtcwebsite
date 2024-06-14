@@ -98,10 +98,7 @@ function AboutusOurManagement() {
               - Prioritizing patient well-being and adhering to ethical
               healthcare practices.
             </li>
-            <li>
-              - Prioritizing patient well-being and adhering to ethical
-              healthcare practices.
-            </li>
+
             <li>
               - Aligning with international standards for treatment protocols.
             </li>

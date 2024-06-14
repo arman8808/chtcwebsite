@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../../assests/images/logo-01-01 4.png";
 import { Email, LocationOn, Phone } from "@mui/icons-material";
+import { useForm } from "react-hook-form";
 function ContactUs() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
+
   return (
     <div className="pagecss gap-[2rem]">
       <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-3 gap-4 rounded-md">
@@ -10,7 +21,7 @@ function ContactUs() {
             We are here to help
           </h2>
           <p className="para text-gray">
-            Do you have any query ?Please feel free to contact us.
+            Do you have any query? Please feel free to contact us.
           </p>
         </div>
         <div className="flexcenter mobile:hidden">
@@ -22,7 +33,10 @@ function ContactUs() {
         </div>
       </div>
       <div className="w-7/12 mobile:w-full mobile:px-4">
-        <from className="flex justify-start items-start flex-col gap-2 w-full">
+        <form
+          className="flex justify-start items-start flex-col gap-2 w-full"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="grid grid-cols-2 gap-4  w-full">
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Name</p>
@@ -30,15 +44,36 @@ function ContactUs() {
                 type="text"
                 placeholder="Name"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("name", {
+                  required: true,
+                  maxLength: 20,
+                  validate: (value) => {
+                    return !!value.trim();
+                  },
+                })}
               />
+              {errors.name && (
+                <p className="loginFormError">Please Enter Valid Name</p>
+              )}
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Phone Number</p>
               <input
-                type="text"
+                type="number"
                 placeholder="Phone Number"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("phone", {
+                  required: true,
+                  pattern: /^[0-9+-]+$/,
+                  minLength: 10,
+                  maxLength: 10,
+                })}
               />
+              {errors.phone && (
+                <p className="loginFormError">
+                  Please Enter Valid Phone Number
+                </p>
+              )}
             </span>
           </div>
           <div className="grid grid-cols-2 gap-4 w-full">
@@ -48,7 +83,17 @@ function ContactUs() {
                 type="text"
                 placeholder="Reason for Visit"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("reasonforVisit", {
+                  required: true,
+                  maxLength: 100,
+                  validate: (value) => {
+                    return !!value.trim();
+                  },
+                })}
               />
+              {errors.reasonforVisit && (
+                <p className="loginFormError">Please Enter Reason for Visit</p>
+              )}
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Department</p>
@@ -56,7 +101,17 @@ function ContactUs() {
                 type="text"
                 placeholder="Department"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("Department", {
+                  required: true,
+                  maxLength: 100,
+                  validate: (value) => {
+                    return !!value.trim();
+                  },
+                })}
               />
+              {errors.Department && (
+                <p className="loginFormError">Please Enter Department</p>
+              )}
             </span>
           </div>
           <div className="grid grid-cols-2 gap-4 w-full">
@@ -66,7 +121,13 @@ function ContactUs() {
                 type="date"
                 placeholder="Preferred Date"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("preferredDate", {
+                  required: true,
+                })}
               />
+              {errors.preferredDate && (
+                <p className="loginFormError">Please Enter Preferred Date</p>
+              )}
             </span>{" "}
             <span className="flex flex-col items-start justify-start w-full gap-2">
               <p>Preferred Time</p>
@@ -74,13 +135,22 @@ function ContactUs() {
                 type="time"
                 placeholder="Preferred Time"
                 className="border-[2px] border-secondry-green pl-[5px] outline-none h-[3rem] rounded-md w-full"
+                {...register("preferredTime", {
+                  required: true,
+                })}
               />
+              {errors.preferredTime && (
+                <p className="loginFormError">Please Enter Preferred Time</p>
+              )}
             </span>
           </div>
-          <button className="button text-white rounded-md green_background_linear">
+          <button
+            type="submit"
+            className="button text-white rounded-md green_background_linear"
+          >
             Submit
           </button>
-        </from>
+        </form>
       </div>
       <div className="w-10/12 py-4   gap-4 rounded-md md:w-11/12">
         <div className="">
@@ -95,7 +165,7 @@ function ContactUs() {
               <p className="text-navy-blue text-normalHeading font-semibold">
                 Phone
               </p>
-              <p>0522-4958144, 9119900861,9119900862</p>
+              <p> 9119900861, 9119900862</p>
             </span>
           </div>{" "}
           <div className="card_background rounded-md p-4 flex items-start justify-star gap-4">
@@ -104,7 +174,7 @@ function ContactUs() {
               <p className="text-navy-blue text-normalHeading font-semibold">
                 Email
               </p>
-              <p>city.lko@gmail.com</p>
+              <p>admin@cityhospitallko.com</p>
             </span>
           </div>{" "}
           <div className="card_background rounded-md p-4 flex items-start justify gap-4">

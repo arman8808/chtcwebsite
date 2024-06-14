@@ -18,7 +18,7 @@ function SubNav() {
           </span>
           <span className="flex justify-center items-center pr-1 gap-1 text-white">
             <Email style={{ fontSize: "1.3rem" }} />
-            <p className="text-[14px]">city.lko@gmail.com</p>
+            <p className="text-[14px]">admin@cityhospitallko.com</p>
           </span>
         </div>
       </div>
