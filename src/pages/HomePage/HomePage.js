@@ -18,7 +18,6 @@ import Urology from "../../assests/images/icons/Mask group-5.png";
 import Dental from "../../assests/images/icons/Mask group-6.png";
 import Critical from "../../assests/images/icons/Mask group-7.png";
 import About from "../../assests/images/Placeholder1.png";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import MarqueeComponent from "../../utils/Marquee";
 import DoctorCard from "../../components/DoctorCard/DoctorCard";
 import ReviewCard from "../../components/ReviewCard/ReviewCard";
@@ -27,12 +26,7 @@ import NewsUpdateCard from "../../components/NewsUpdateCard/NewsUpdateCard";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { MdOutlineGirl } from "react-icons/md";
-import {
-  GiBrain,
-  GiKidneys,
-  GiKneeBandage,
-  GiPsychicWaves,
-} from "react-icons/gi";
+import { GiKidneys, GiKneeBandage } from "react-icons/gi";
 import { FaHeartPulse } from "react-icons/fa6";
 import CountUp from "react-countup";
 import RohilMehta from "../../assests/images/1.png";
@@ -45,7 +39,7 @@ function HomePage() {
   const {
     register,
     handleSubmit,
-    reset,
+
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
@@ -54,10 +48,10 @@ function HomePage() {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-[3rem] mobile:[2rem]">
       <div
-        className="w-full py-4 px-[3%] pt-[2rem] bg-primary-green flex flex-col gap-2 backgroundPosition"
+        className="w-full py-4 px-[3%] pt-[2.5rem] bg-primary-green flex flex-col gap-2 backgroundPosition"
         style={{ backgroundImage: `url('${heroBackground}')` }}
       >
-        <div className="grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
+        <div className=" py-4 grid grid-cols-2 gap-4 mobile:flex mobile:flex-col-reverse tablet:flex tablet:flex-col-reverse">
           <div className="flex flex-col items-start justify-start gap-2">
             <img
               src={herosectionImage1}
@@ -393,7 +387,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="w-11/12 py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
+      <div className="w-11/12 p-4 py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1 contact_shadow rounded-md">
         <div className="col-span-1 flex flex-col items-start justify-start gap-2">
           <span>
             <p className="text-secondry-green text-normalHeading font-medium">
@@ -517,10 +511,7 @@ function HomePage() {
                 )}
               </span>
             </div>
-            <button
-              type="submit"
-              className="button text-white rounded-md green_background_linear"
-            >
+            <button type="submit" className="button text-white rounded-md ">
               Submit
             </button>
           </form>

@@ -8,7 +8,6 @@ import {
   LinkedIn,
   LocationOn,
   Phone,
-  Twitter,
 } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -140,15 +139,21 @@ function Footer() {
           "
         >
           <p>Follow Us</p>
-          <Link to="https://www.instagram.com/dr.rohilmehta/" target="_blank">
+          <Link
+            to="https://www.instagram.com/cityhospitalandtraumacentre/"
+            target="_blank"
+          >
             <Instagram />
           </Link>
-          <Link to="https://www.facebook.com/rohil.mehta.9" target="_blank">
+          <Link
+            to="https://www.facebook.com/people/City-Hospital-and-Trauma-Centre/61555758929812/"
+            target="_blank"
+          >
             <Facebook />
           </Link>
 
           <Link
-            to="https://www.linkedin.com/in/rohil-mehta-643a6b238/"
+            to="https://www.linkedin.com/company/city-hospital-trauma-centre/"
             target="_blank"
           >
             <LinkedIn />
