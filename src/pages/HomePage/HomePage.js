@@ -5,7 +5,7 @@ import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
 import freecodecamp from "../../assests/images/Untitled-1.webp";
 import wearehiring from "../../assests/images/chtc hiring.png";
-
+import newsletter from "../../assests/images/gallery/DSC03447.webp";
 // import image from "../../assests/images/Group 120.png";
 import contacusimage from "../../assests/images/Rectangle 111.png";
 import bg from "../../assests/images/Group 103.png";
@@ -34,6 +34,8 @@ import RajeshMehta from "../../assests/images/2.png";
 import JyotsnaMehta from "../../assests/images/3.png";
 import { LiaUserNurseSolid } from "react-icons/lia";
 import { useForm } from "react-hook-form";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 function HomePage() {
   const history = useNavigate();
   const {
@@ -45,6 +47,17 @@ function HomePage() {
   const onSubmit = async (data) => {
     console.log(data);
   };
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    568: { items: 1 },
+    1024: {
+      items: 2,
+      itemsFit: "contain",
+    },
+  };
+
   return (
     <div className="w-full flex flex-col items-center justify-center gap-[3rem] mobile:[2rem]">
       <div
@@ -171,38 +184,61 @@ function HomePage() {
           into our blogs and updates to acquire valuable insights and stay
           updated on essential information for maintaining your well-being.
         </p>
-        <div className="grid grid-cols-2 gap-4 mobile:grid-cols-1">
-          <NewsUpdateCard
-            image={freecodecamp}
-            title={"Free Health Camp!"}
-            para1={
-              "Join us for a comprehensive health camp with 30+ doctors from various specialties including Orthopaedics, Gynaecology, General Medicine, General Surgery, Cardiology, and more. Avail free lab tests like Blood Sugar, Uric Acid, Haemoglobin, Neuropathy Test, Thyroid, BMD, LFT, and receive 3 days of free medicines. Additionally, book surgeries and tests at 50% discount!"
-            }
-            para2={"Date: 9th June 2024 (Sunday)"}
-            para3={"Time: 9 AM to 3 PM"}
-            para4={
-              "Don't miss this opportunity for your health and well-being. Visit us for expert consultations and significant savings on essential medical services."
-            }
-          />
-          <NewsUpdateCard
-            image={wearehiring}
-            para1={
-              "We are excited to announce openings for qualified and compassionate professionals to join our esteemed hospital. We are looking for dedicated individuals who are committed to providing the highest standard of care to our patients."
-            }
-            para2={"Open Positions:"}
-            para3={"1. Nurses Qualifications: GNM/B.Sc. Nursing"}
-            para4={"2. EMO/RMO Qualifications: MBBS Doctors"}
-            para5={
-              "3. ICU Technicians Qualifications: Relevant Experience and Certifications"
-            }
-            para6={"How to Apply:"}
-            para7={
-              "Interested candidates are invited to send their resume and cover letter at (city.lko@gmail.com) or apply directly through our website."
-            }
-            para8={
-              "Together, let's make a difference in healthcare. Join us in our mission to provide exceptional care to our community."
-            }
-          />
+        <div className="w-full grid grid-cols-1 gap-4 mobile:grid-cols-1">
+          <AliceCarousel
+            responsive={responsive}
+            disableDotsControls={true}
+            disableButtonsControls={true}
+            autoPlay={true}
+            autoPlayInterval={4000}
+            infinite={true}
+            mouseTracking
+            className="w-full gap-4"
+          >
+            <NewsUpdateCard
+              image={freecodecamp}
+              title={"Free Health Camp!"}
+              para1={
+                "Join us for a comprehensive health camp with 30+ doctors from various specialties including Orthopaedics, Gynaecology, General Medicine, General Surgery, Cardiology, and more. Avail free lab tests like Blood Sugar, Uric Acid, Haemoglobin, Neuropathy Test, Thyroid, BMD, LFT, and receive 3 days of free medicines. Additionally, book surgeries and tests at 50% discount!"
+              }
+              para2={"Date: 9th June 2024 (Sunday)"}
+              para3={"Time: 9 AM to 3 PM"}
+              para4={
+                "Don't miss this opportunity for your health and well-being. Visit us for expert consultations and significant savings on essential medical services."
+              }
+            />
+            <NewsUpdateCard
+              image={wearehiring}
+              para1={
+                "We are excited to announce openings for qualified and compassionate professionals to join our esteemed hospital. We are looking for dedicated individuals who are committed to providing the highest standard of care to our patients."
+              }
+              para2={"Open Positions:"}
+              para3={"1. Nurses Qualifications: GNM/B.Sc. Nursing"}
+              para4={"2. EMO/RMO Qualifications: MBBS Doctors"}
+              para5={
+                "3. ICU Technicians Qualifications: Relevant Experience and Certifications"
+              }
+              para6={"How to Apply:"}
+              para7={
+                "Interested candidates are invited to send their resume and cover letter at (city.lko@gmail.com) or apply directly through our website."
+              }
+              para8={
+                "Together, let's make a difference in healthcare. Join us in our mission to provide exceptional care to our community."
+              }
+            />
+            <NewsUpdateCard
+              image={newsletter}
+              para1={
+                "City Hospital and Trauma Centre (CHTC) hosted a successful health camp in Lucknow on 9th June, 2024, providing comprehensive care with over 30 specialists from various fields, including Orthopaedics, Gynaecology, and Cardiology."
+              }
+              para2={
+                "The event offered free lab tests, such as Blood Sugar, Thyroid, and Bone Mineral Density, along with three days of free medications. A key feature was a 50% discount on surgeries and advanced tests, alleviating financial burdens for patients."
+              }
+              para3={
+                "The camp saw hundreds of attendees benefiting from expert consultations and medical services. Dr. Rajesh Mehta emphasized the hospital's commitment to accessible healthcare, and participants expressed gratitude for the exceptional care received."
+              }
+            />
+          </AliceCarousel>
         </div>
       </div>
       <div

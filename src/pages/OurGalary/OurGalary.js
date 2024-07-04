@@ -1,12 +1,50 @@
 import React from "react";
-import img from "../../assests/images/Rectangle 2771.png";
-import img1 from "../../assests/images/Rectangle 276.png";
-import img2 from "../../assests/images/Rectangle 278.png";
-import img3 from "../../assests/images/Rectangle 292.png";
-import img4 from "../../assests/images/Rectangle 277.png";
-import img5 from "../../assests/images/Rectangle 277.png";
+import img from "../../assests/images/gallery/DSC03446.webp";
+import img1 from "../../assests/images/gallery/DSC03447.webp";
+import img2 from "../../assests/images/gallery/DSC03450.webp";
+import img3 from "../../assests/images/gallery/DSC03456.webp";
+import img4 from "../../assests/images/gallery/DSC03458.webp";
+import img5 from "../../assests/images/gallery/DSC03462.webp";
+import img6 from "../../assests/images/gallery/DSC03476.webp";
+import img7 from "../../assests/images/gallery/DSC03480.webp";
+import img8 from "../../assests/images/gallery/DSC03488.webp";
+import img9 from "../../assests/images/gallery/DSC03491.webp";
+import img10 from "../../assests/images/gallery/DSC03498.webp";
+import img11 from "../../assests/images/gallery/DSC03503.webp";
+import img12 from "../../assests/images/gallery/DSC03505.webp";
+import img13 from "../../assests/images/gallery/DSC03506.webp";
+import img14 from "../../assests/images/gallery/DSC03508.webp";
+import img15 from "../../assests/images/gallery/DSC03509.webp";
+import img16 from "../../assests/images/gallery/DSC03512.webp";
+import img17 from "../../assests/images/gallery/DSC03514.webp";
+import img18 from "../../assests/images/gallery/DSC03518.webp";
+import img19 from "../../assests/images/gallery/DSC03523.webp";
+import img20 from "../../assests/images/gallery/DSC03766.webp";
+import img21 from "../../assests/images/gallery/DSC03548.webp";
+import img22 from "../../assests/images/gallery/DSC03553.webp";
+import img23 from "../../assests/images/gallery/DSC03544.webp";
+import img24 from "../../assests/images/gallery/DSC03572.webp";
+import img25 from "../../assests/images/gallery/DSC03550.webp";
+import img26 from "../../assests/images/gallery/DSC03575.webp";
+import img27 from "../../assests/images/gallery/DSC03587.webp";
+import img28 from "../../assests/images/gallery/DSC03610.webp";
+import img29 from "../../assests/images/gallery/DSC03773.webp";
 import OurGoalsBanner from "../../utils/OurGoalsBanner";
 function OurGalary() {
+  const galleryImages = [
+    [img, img1, img2],
+
+    [img6, img7, img8],
+    [img9, img10, img12],
+    [img13, img14, img15],
+    [img16, img17, img18],
+    [img19, img20, img21],
+    [img22, img23, img24],
+    [img25, img26, img27],
+    [img25, img26, img27],
+    [img28, img29, img11],
+    [img3, img4, img5],
+  ];
   return (
     <div className="pagecss w-full pt-[3rem] gap-[1rem]">
       <div class="w-11/12">
@@ -14,45 +52,20 @@ function OurGalary() {
           Our Gallery
         </h2>
       </div>
-      <div class="w-11/12 grid grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
-        <div class="grid gap-2">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img} alt="" />
+      <div class="w-11/12 grid gap-4">
+        {galleryImages?.map((item) => (
+          <div class="grid gap-4 grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
+            {item?.map((image, index) => (
+              <div key={index}>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src={image}
+                  alt="gallery"
+                />
+              </div>
+            ))}
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img4} alt="" />
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img5} alt="" />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src={img5}
-              alt=""
-              className="h-[20rem] w-full"
-            />
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img1} alt="" />
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img3} alt="" />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img4} alt="" />
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img2} alt="" />
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src={img5} alt="" />
-          </div>
-        </div>
+        ))}
       </div>
       <div className=" w-11/12 py-4">
         <OurGoalsBanner />

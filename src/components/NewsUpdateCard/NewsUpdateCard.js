@@ -13,7 +13,7 @@ function NewsUpdateCard({
   para8,
 }) {
   return (
-    <div className="bg-white rounded-md p-4 box_shadow flex flex-col items-start justify-start gap-3">
+    <div className="bg-white rounded-md p-4 box_shadow flex flex-col items-start justify-start gap-3 w-[98%]">
       <img src={image ? image : img} alt="" className="object-contain" />
       <p className="text-normalHeading font-semibold text-black-shade">
         {title && title}
