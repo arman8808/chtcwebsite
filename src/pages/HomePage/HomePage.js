@@ -196,6 +196,18 @@ function HomePage() {
             className="w-full gap-4"
           >
             <NewsUpdateCard
+              image={newsletter}
+              para1={
+                "City Hospital and Trauma Centre (CHTC) hosted a successful health camp in Lucknow on 9th June, 2024, providing comprehensive care with over 30 specialists from various fields, including Orthopaedics, Gynaecology, and Cardiology."
+              }
+              para2={
+                "The event offered free lab tests, such as Blood Sugar, Thyroid, and Bone Mineral Density, along with three days of free medications. A key feature was a 50% discount on surgeries and advanced tests, alleviating financial burdens for patients."
+              }
+              para3={
+                "The camp saw hundreds of attendees benefiting from expert consultations and medical services. Dr. Rajesh Mehta emphasized the hospital's commitment to accessible healthcare, and participants expressed gratitude for the exceptional care received."
+              }
+            />
+            <NewsUpdateCard
               image={freecodecamp}
               title={"Free Health Camp!"}
               para1={
@@ -224,18 +236,6 @@ function HomePage() {
               }
               para8={
                 "Together, let's make a difference in healthcare. Join us in our mission to provide exceptional care to our community."
-              }
-            />
-            <NewsUpdateCard
-              image={newsletter}
-              para1={
-                "City Hospital and Trauma Centre (CHTC) hosted a successful health camp in Lucknow on 9th June, 2024, providing comprehensive care with over 30 specialists from various fields, including Orthopaedics, Gynaecology, and Cardiology."
-              }
-              para2={
-                "The event offered free lab tests, such as Blood Sugar, Thyroid, and Bone Mineral Density, along with three days of free medications. A key feature was a 50% discount on surgeries and advanced tests, alleviating financial burdens for patients."
-              }
-              para3={
-                "The camp saw hundreds of attendees benefiting from expert consultations and medical services. Dr. Rajesh Mehta emphasized the hospital's commitment to accessible healthcare, and participants expressed gratitude for the exceptional care received."
               }
             />
           </AliceCarousel>
