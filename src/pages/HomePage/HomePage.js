@@ -5,7 +5,7 @@ import heroBackground from "../../assests/images/Group 117.png";
 import image from "../../assests/images/Group 120.png";
 import freecodecamp from "../../assests/images/Untitled-1.webp";
 import wearehiring from "../../assests/images/chtc hiring.png";
-import newsletter from "../../assests/images/gallery/DSC03447.webp";
+import newsletter from "../../assests/images/web.webp";
 // import image from "../../assests/images/Group 120.png";
 import contacusimage from "../../assests/images/Rectangle 111.png";
 import bg from "../../assests/images/Group 103.png";
