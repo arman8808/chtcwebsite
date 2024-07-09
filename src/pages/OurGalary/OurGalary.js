@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img from "../../assests/images/gallery/DSC03446.webp";
 import img1 from "../../assests/images/gallery/DSC03447.webp";
 import img2 from "../../assests/images/gallery/DSC03450.webp";
@@ -30,6 +30,7 @@ import img27 from "../../assests/images/gallery/DSC03587.webp";
 import img28 from "../../assests/images/gallery/DSC03610.webp";
 import img29 from "../../assests/images/gallery/DSC03773.webp";
 import OurGoalsBanner from "../../utils/OurGoalsBanner";
+import { Pagination, Stack } from "@mui/material";
 function OurGalary() {
   const galleryImages = [
     [img, img1, img2],
@@ -45,6 +46,11 @@ function OurGalary() {
     [img28, img29, img11],
     [img3, img4, img5],
   ];
+  const [page, setPage] = useState(1);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    setCount(Math.ceil(galleryImages?.length / 4).toFixed(0));
+  }, [galleryImages]);
   return (
     <div className="pagecss w-full pt-[3rem] gap-[1rem]">
       <div class="w-11/12">
@@ -53,19 +59,35 @@ function OurGalary() {
         </h2>
       </div>
       <div class="w-11/12 grid gap-4">
-        {galleryImages?.map((item) => (
-          <div class="grid gap-4 grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
-            {item?.map((image, index) => (
-              <div key={index}>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src={image}
-                  alt="gallery"
-                />
-              </div>
-            ))}
-          </div>
-        ))}
+        {galleryImages
+          ?.slice((page - 1) * 4, (page - 1) * 4 + 4)
+          ?.map((item) => (
+            <div class="grid gap-4 grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
+              {item?.map((image, index) => (
+                <div key={index}>
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src={image}
+                    alt="gallery"
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
+        <div className="w-full flex items-center justify-center py-4">
+          <Stack spacing={2}>
+            <Pagination
+              count={count}
+              variant="outlined"
+              shape="rounded"
+              color="primary"
+              onChange={(_, value) => {
+                setPage(value);
+                window.scroll(0, 0);
+              }}
+            />
+          </Stack>
+        </div>
       </div>
       <div className=" w-11/12 py-4">
         <OurGoalsBanner />
