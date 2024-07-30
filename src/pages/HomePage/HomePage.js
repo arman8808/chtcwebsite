@@ -107,7 +107,7 @@ function HomePage() {
       </div>
       <div className="w-11/12 green_background_linear py-[2rem] px-[5%] grid grid-cols-4 gap-4 rounded-md mobile:grid-cols-2 tablet:grid-cols-2 text-center">
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">
+          <p className="text-mainHeading font-bold text-white mobile:text-[2rem]">
             <CountUp
               start={0}
               end={8000}
@@ -119,19 +119,19 @@ function HomePage() {
           <p className="font-medium text-semibold">KNEE REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">
+          <p className="text-mainHeading font-bold text-white mobile:text-[2rem]">
             <CountUp start={0} end={5000} duration={5}></CountUp>+
           </p>
           <p className="font-medium text-semibold">HIP REPLACEMENT</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">
+          <p className="text-mainHeading font-bold text-white mobile:text-[2rem]">
             <CountUp start={0} end={4000} duration={5}></CountUp>+
           </p>
           <p className="font-medium text-semibold">ARTHROSCOPY SURGERIES</p>
         </span>{" "}
         <span className="flex flex-col items-center justify-center text-white ">
-          <p className="text-mainHeading font-bold text-white">
+          <p className="text-mainHeading font-bold text-white mobile:text-[2rem]">
             <CountUp start={0} end={25} duration={10}></CountUp>+
           </p>
           <p className="font-medium text-semibold">Years Of Service</p>

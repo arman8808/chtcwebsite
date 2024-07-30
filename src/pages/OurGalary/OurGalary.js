@@ -34,7 +34,6 @@ import { Pagination, Stack } from "@mui/material";
 function OurGalary() {
   const galleryImages = [
     [img, img1, img2],
-
     [img6, img7, img8],
     [img9, img10, img12],
     [img13, img14, img15],
@@ -66,9 +65,10 @@ function OurGalary() {
               {item?.map((image, index) => (
                 <div key={index}>
                   <img
-                    class="h-auto max-w-full rounded-lg"
+                    className="h-auto max-w-full rounded-lg"
                     src={image}
                     alt="gallery"
+                    loading="lazy"
                   />
                 </div>
               ))}

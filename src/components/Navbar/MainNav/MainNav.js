@@ -5,8 +5,7 @@ import "./MainNav.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal } from "@mui/material";
 import { Slide } from "@mui/material";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdCloseCircleOutline } from "react-icons/io";
 function MainNav() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -143,20 +142,27 @@ function MainNav() {
         <div className="hamburger-menu hidden mobile:flex tablet:flex">
           <input id="menu__toggle" type="checkbox" />
           <label className="menu__btn" for="menu__toggle">
-            <span
-              onClick={() =>
-                (document.getElementById("menu__toggle").checked = false)
-              }
-            ></span>
+            <span></span>
           </label>
 
           <ul className="menu__box" ref={comRef}>
+            <span className="w-full pr-4 text-end flex items-end justify-end">
+              <IoMdCloseCircleOutline
+                className="text-[2.5rem]"
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
+                }
+              />
+            </span>
             <li>
               <NavLink
                 to="/"
                 className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
+                }
+                onClick={() =>
+                  (document.getElementById("menu__toggle").checked = false)
                 }
               >
                 Home
@@ -187,7 +193,7 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                About Facility{" "}
+                Facility{" "}
               </NavLink>
             </li>
             <li>
@@ -201,7 +207,7 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                About OurManagement
+                Our Management
               </NavLink>
             </li>
             <li>
@@ -215,14 +221,13 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                About Orthopaedic
+                Orthopaedics
               </NavLink>
             </li>
-
             <li>
               <NavLink
                 to="/deparments"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -236,7 +241,7 @@ function MainNav() {
             <li>
               <NavLink
                 to="/ourdoctors"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -250,7 +255,7 @@ function MainNav() {
             <li>
               <NavLink
                 to="/successstories"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -264,7 +269,7 @@ function MainNav() {
             <li>
               <NavLink
                 to="/ourgalary"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -272,13 +277,13 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                Our Galary
+                Our Gallery
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/logosgalary"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -286,13 +291,13 @@ function MainNav() {
                   (document.getElementById("menu__toggle").checked = false)
                 }
               >
-                Logos Galary
+                Logos Gallery
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/contactus"
-                className="text-[18px] font-medium menu__item"
+                className="text-[18px] font-medium menu__item w-fit"
                 style={({ isActive }) =>
                   isActive ? activeStyle : unActiveStyle
                 }
@@ -331,7 +336,7 @@ function MainNav() {
                 }
                 onClick={handleClose}
               >
-                AboutUs
+                About Us
               </NavLink>{" "}
               <NavLink
                 to="/aboutfacility"
@@ -341,7 +346,7 @@ function MainNav() {
                 }
                 onClick={handleClose}
               >
-                About Facility
+                Facility
               </NavLink>{" "}
               <NavLink
                 to="/aboutusourmanagement"
@@ -351,7 +356,7 @@ function MainNav() {
                 }
                 onClick={handleClose}
               >
-                About Our Management
+                Our Management
               </NavLink>{" "}
               <NavLink
                 to="/aboutorthopaedic"
@@ -361,7 +366,7 @@ function MainNav() {
                 }
                 onClick={handleClose}
               >
-                About Orthopaedic
+                Orthopaedics
               </NavLink>
             </div>
           </Box>
