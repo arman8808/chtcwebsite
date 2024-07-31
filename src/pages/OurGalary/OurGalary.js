@@ -73,7 +73,6 @@ function OurGalary() {
                     className="h-auto max-w-full rounded-lg"
                     effect="blur"
                     wrapperProps={{
-                      // If you need to, you can tweak the effect transition using the wrapper style.
                       style: { transitionDelay: "1s" },
                     }}
                   />
