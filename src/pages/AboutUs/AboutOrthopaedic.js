@@ -1,5 +1,7 @@
 import React from "react";
-import aboutimg from "../../assests/images/Rectangle 284.png";
+import aboutimg from "../../assests/images/Orthopaedic-Physiotherapy.jpg";
+import aboutimg1 from "../../assests/images/techniques-1.jpg";
+import aboutimg2 from "../../assests/images/Orthopedic-treatment-burlington.jpg";
 function AboutOrthopaedic() {
   return (
     <div className="pagecss gap-[2rem] mobile:gap-[1rem]">
@@ -53,14 +55,14 @@ function AboutOrthopaedic() {
       <div className="w-10/12 py-4 pt-[3rem] grid grid-cols-2 gap-4 rounded-md mobile:grid-cols-1 mobile:pt-[1rem]">
         <div className="flexcenter">
           <img
-            src={aboutimg}
+            src={aboutimg1}
             alt="about"
             className="h-[25rem] w-[100%] object-cover rounded"
           />{" "}
         </div>{" "}
         <div className="flexcenter">
           <img
-            src={aboutimg}
+            src={aboutimg2}
             alt="about"
             className="h-[25rem] w-[100%] object-cover rounded"
           />{" "}

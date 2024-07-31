@@ -2,7 +2,7 @@ import React from "react";
 import img from "../../assests/images/photo.png";
 function DeparmentCard({ profile, name, desigitation }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2  bg-light-gray p-4 w-[80%] rounded w-full mobile:min-w-[20rem] md:min-w-[17rem]">
+    <div className="flex flex-col items-center justify-center gap-2  bg-light-gray p-4 w-[80%] rounded w-full mobile:min-w-[18rem] md:min-w-[17rem]">
       <img
         src={profile ? profile : img}
         alt="doctor"

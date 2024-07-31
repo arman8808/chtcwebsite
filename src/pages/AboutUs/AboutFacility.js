@@ -1,5 +1,14 @@
 import React from "react";
-import aboutimg1 from "../../assests/images/Rectangle 292.png";
+import ultrasound from "../../assests/images/facilities/ultrasound-scan.webp";
+import xray from "../../assests/images/facilities/23501-knee-x-ray.webp";
+import pathology from "../../assests/images/facilities/Pathology & Microbiology (1).webp";
+import ophthalmology from "../../assests/images/facilities/ophthalmology.webp";
+import Urology from "../../assests/images/facilities/Urology-Problems-.webp";
+import orthopedic from "../../assests/images/facilities/orthopedic-bn.webp";
+import Emergency from "../../assests/images/facilities/Emergency Care (1).webp";
+import Modular from "../../assests/images/facilities/Modular OT’S.webp";
+import Critical from "../../assests/images/facilities/Critical Care Unit (1).webp";
+import ICU from "../../assests/images/facilities/ICU.webp";
 function AboutFacility() {
   return (
     <div className="pagecss gap-[3rem]">
@@ -52,7 +61,7 @@ function AboutFacility() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={ultrasound}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -61,7 +70,7 @@ function AboutFacility() {
       <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={xray}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -113,7 +122,7 @@ function AboutFacility() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={pathology}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -122,7 +131,7 @@ function AboutFacility() {
       <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={ophthalmology}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -157,7 +166,7 @@ function AboutFacility() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={Urology}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -166,7 +175,7 @@ function AboutFacility() {
       <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={orthopedic}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -206,7 +215,7 @@ function AboutFacility() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={Emergency}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -218,7 +227,7 @@ function AboutFacility() {
             Modular OT’S
           </h2>
           <img
-            src={aboutimg1}
+            src={Modular}
             alt="about"
             className="h-[18rem] w-[100%] object-cover rounded"
           />
@@ -251,7 +260,7 @@ function AboutFacility() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={Critical}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />
@@ -260,7 +269,7 @@ function AboutFacility() {
       <div className="w-10/12  py-4  grid grid-cols-2 gap-4 mobile:grid-cols-1">
         <div className="flexcenter">
           <img
-            src={aboutimg1}
+            src={ICU}
             alt="about"
             className="h-[22rem] w-[80%] object-cover rounded mobile:w-[100%]"
           />

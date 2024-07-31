@@ -242,35 +242,35 @@ function HomePage() {
         </div>
       </div>
       <div
-        className="w-11/12 mb-[2rem] p-4 flex flex-col items-center justify-start gap-2 h-[20rem] lg:h-[22rem] md:h-[24rem] tablet:h-[23rem]  rounded-md relative mobile:h-[48rem] mobile:bg-no-repeat mobile:bg-cover"
+        className="w-11/12 mb-[2rem] p-4 flex flex-col items-center justify-start gap-2 h-[20rem] lg:h-[22rem] md:h-[24rem] tablet:h-[23rem]  rounded-md relative mobile:h-[52rem] mobile:bg-no-repeat mobile:bg-cover"
         style={{ backgroundImage: `url("${bg}")` }}
       >
         <h6 className="text-seconderyHeading font-semibold text-white">
           Departments
         </h6>
         <div className="w-11/12 absolute bottom-[1rem] flex gap-4 mobile:grid mobile:grid-cols-2 md:overflow-x-scroll tablet:overflow-x-scroll ">
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             {/* <img src={bell} alt="" /> */}
             <GiKneeBandage className="text-[3rem]" />
             <p>Orthopaedic Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             <MdOutlineGirl className="text-[3rem]" />
             <p>Pediatric Departement</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             <GiKidneys className="text-[3rem]" />
             <p>Obstetrics and Gynecology Department</p>
           </span>{" "}
-          <span className=" w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className=" w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             <FaHeartPulse className="text-[3rem]" />
             <p>Cardiology Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             <LiaUserNurseSolid className="text-[3rem]" />
             <p>Critical Care Department</p>
           </span>{" "}
-          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-[10rem]">
+          <span className="w-[17rem] cursor-pointer text-center bg-white hover:scale-105 hover:bg-secondry-green hover:text-white flex flex-col items-center justify-center p-4 py-[3rem] gap-3 rounded-md mobile:w-full">
             {/* <img src={bell} alt="" /> */}
             <HiOutlineBellAlert className="text-[3rem]" />
             <p>Emergency Department</p>

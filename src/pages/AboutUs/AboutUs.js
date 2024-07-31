@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../../assests/images/Rectangle 277.png";
+import aboutimg2 from "../../assests/images/gallery/DJI_0719 .webp";
 import aboutimg1 from "../../assests/images/Rectangle 284.png";
 import RajeshMehta from "../../assests/images/2.png";
 function AboutUs() {
@@ -51,9 +51,10 @@ function AboutUs() {
         </div>
         <div className="flexcenter">
           <img
-            src={aboutimg}
+            src={aboutimg2}
             alt="about"
-            className="h-[25rem] w-[80%] object-cover rounded mobile:w-[100%] mobile:h-[15rem]"
+            className="h-[28rem] w-[90%] object-cover rounded mobile:w-[100%] mobile:h-[15rem]"
+            loading="lazy"
           />
         </div>
       </div>
