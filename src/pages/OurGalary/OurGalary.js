@@ -31,6 +31,8 @@ import img28 from "../../assests/images/gallery/DSC03610.webp";
 import img29 from "../../assests/images/gallery/DSC03773.webp";
 import OurGoalsBanner from "../../utils/OurGoalsBanner";
 import { Pagination, Stack } from "@mui/material";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 function OurGalary() {
   const galleryImages = [
     [img, img1, img2],
@@ -63,12 +65,17 @@ function OurGalary() {
           ?.map((item) => (
             <div class="grid gap-4 grid-cols-3 md:grid-cols-4 gap-4 mobile:grid-cols-1">
               {item?.map((image, index) => (
-                <div key={index}>
-                  <img
-                    className="h-auto max-w-full rounded-lg"
+                <div key={image}>
+                  {/* <img src={image} alt="gallery" loading="lazy" /> */}
+                  <LazyLoadImage
                     src={image}
                     alt="gallery"
-                    loading="lazy"
+                    className="h-auto max-w-full rounded-lg"
+                    effect="blur"
+                    wrapperProps={{
+                      // If you need to, you can tweak the effect transition using the wrapper style.
+                      style: { transitionDelay: "1s" },
+                    }}
                   />
                 </div>
               ))}

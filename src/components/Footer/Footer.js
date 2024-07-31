@@ -81,7 +81,7 @@ function Footer() {
                 onClick={() => history("/ourgalary")}
                 className="text-[1rem] font-normal cursor-pointer"
               >
-                Our Galary
+                Our Gallery
               </p>
             </span>
             <span>

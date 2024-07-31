@@ -280,7 +280,7 @@ function MainNav() {
                 Our Gallery
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/logosgalary"
                 className="text-[18px] font-medium menu__item w-fit"
@@ -293,7 +293,7 @@ function MainNav() {
               >
                 Logos Gallery
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/contactus"
